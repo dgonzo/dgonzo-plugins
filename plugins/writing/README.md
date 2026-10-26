@@ -1,6 +1,6 @@
 # writing
 
-The house writing standard and working style, as one plugin for every surface. Project tweaks live in a `WRITING.md` at the repo root.
+The house writing standard, as one plugin for every surface. Session habits moved to the `dgonzo` plugin in 3.0.0. Project tweaks live in a `WRITING.md` at the repo root.
 
 ```
 /plugin install writing --marketplace dgonzo/dgonzo-plugins
@@ -30,7 +30,6 @@ flowchart TD
 | Component | Name | Job |
 |---|---|---|
 | Skill | `writing-standard` | the prose rules and the check before you send |
-| Skill | `working-style` | session behaviour: answer first, no narration, do the work, keep to the objective |
 | Skill | `improve-readability` | review one file, report findings, never edit |
 | Skill | `review-prose` | review a diff, a ref or a PR, report findings, never edit |
 | Command | `/writing:lint <file>` | run the linter on one file and print its output |
@@ -46,7 +45,7 @@ The hooks run in Claude Code and in Cowork sessions on your computer. Chat has n
 Paste this block into Cowork global instructions and into claude.ai preferences. Keep it in `~/.claude/CLAUDE.md` too. The fallback card ships with the plugin and the SessionStart hook loads it, so nothing else is pasted anywhere.
 
 ```markdown
-Load the writing:working-style and writing:writing-standard skills before the first reply in every session and follow them.
+Load the dgonzo:working-style and writing:writing-standard skills before the first reply in every session and follow them.
 
 If a WRITING.md exists in the working folder, read it too.
 ```

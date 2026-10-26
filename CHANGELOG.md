@@ -1,5 +1,20 @@
 # Changelog
 
+## writing 3.0.0
+
+- Breaking. The `working-style` skill moved to the new `dgonzo` plugin. `/writing:working-style` no longer exists. Install `dgonzo@dgonzo` and load `dgonzo:working-style` instead.
+- The plugin now has three skills: writing-standard, improve-readability and review-prose.
+- The CLAUDE.md snippet loads `dgonzo:working-style` and `writing:writing-standard`.
+
+## dgonzo 1.0.0
+
+- First release of David Gonzalez's personal plugin. Install ID `dgonzo@dgonzo`.
+- Session: `working-style`, moved from `writing`. It now points at `/writing:writing-standard` for team documents and `/dgonzo:voice` for text sent under David's name.
+- Voice: `voice`, `signal-cut`, `position-lock`, `audience-model`, `exec-brief`.
+- Judgment: `lens` with all reasoning modes from gwrk, `decision-forge`, `truth-extract`, `architecture-stress-test`, `naming-forge`, `build-vs-buy`.
+- Leadership: `ragb`, `owner-brief`, `cut-list`, `postmortem`, `hiring-debrief`.
+- Compound skills follow the gwrk design rule. Each names one failure mode and stacks three reasoning modes against it.
+
 ## 2.0.1
 
 - The repo is now `dgonzo/dgonzo-plugins`. The old name redirects. The install ID stays `writing@dgonzo`.

@@ -1,0 +1,11 @@
+{
+  "name": "dgonzo",
+  "displayName": "dgonzo",
+  "version": "1.0.0",
+  "description": "Personal session habits for Claude. One skill, working-style: answer first, do not narrate, do the work, keep to the objective. The prose rules are in the writing plugin.",
+  "author": { "name": "David Gonzalez", "url": "https://github.com/dgonzo" },
+  "homepage": "https://github.com/dgonzo/dgonzo-plugins/tree/main/plugins/dgonzo",
+  "repository": "https://github.com/dgonzo/dgonzo-plugins",
+  "license": "UNLICENSED",
+  "keywords": ["working-style", "habits"]
+}

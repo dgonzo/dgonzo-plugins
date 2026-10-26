@@ -1,17 +1,46 @@
 {
   "name": "dgonzo",
-  "description": "Plugins by David Gonzalez (dgonzo). One so far: a house writing standard and working style for chat, Cowork and Claude Code.",
-  "owner": { "name": "David Gonzalez", "url": "https://github.com/dgonzo" },
+  "description": "Plugins by David Gonzalez (dgonzo). Two plugins: dgonzo, his personal session habits, voice and judgment skills, and writing, a house writing standard for chat, Cowork and Claude Code.",
+  "owner": {
+    "name": "David Gonzalez",
+    "url": "https://github.com/dgonzo"
+  },
   "plugins": [
+    {
+      "name": "dgonzo",
+      "displayName": "dgonzo",
+      "source": "./plugins/dgonzo",
+      "description": "David Gonzalez's personal skills: working style, his own voice, reasoning lenses and judgment passes, and leadership routines.",
+      "author": {
+        "name": "David Gonzalez",
+        "url": "https://github.com/dgonzo"
+      },
+      "homepage": "https://github.com/dgonzo/dgonzo-plugins/tree/main/plugins/dgonzo",
+      "category": "productivity",
+      "tags": [
+        "personal",
+        "voice",
+        "reasoning",
+        "leadership"
+      ]
+    },
     {
       "name": "writing",
       "displayName": "Writing",
       "source": "./plugins/writing",
-      "description": "House writing standard, working style, readability and prose reviews, linter and hooks. Works in chat, Cowork and Claude Code.",
-      "author": { "name": "David Gonzalez", "url": "https://github.com/dgonzo" },
+      "description": "House writing standard, readability and prose reviews, linter and hooks. Works in chat, Cowork and Claude Code.",
+      "author": {
+        "name": "David Gonzalez",
+        "url": "https://github.com/dgonzo"
+      },
       "homepage": "https://github.com/dgonzo/dgonzo-plugins/tree/main/plugins/writing",
       "category": "productivity",
-      "tags": ["writing", "style", "readability", "lint"]
+      "tags": [
+        "writing",
+        "style",
+        "readability",
+        "lint"
+      ]
     }
   ]
 }
