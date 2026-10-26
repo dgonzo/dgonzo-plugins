@@ -1,5 +1,11 @@
 # Changelog
 
+## dgonzo 1.1.0
+
+- `voice` has two registers. The work register covers Slack and email and is the default. It comes from David's own messages: name first, "would you" asks, named owners, numbers as receipts, `--dg` on email. The essay register keeps the Foxtrot Charlie traits.
+- `voice` reads `~/.claude/dgonzo/voice-samples.md` when it exists. That file has David's verbatim messages and stays out of this repo. The public samples file has the patterns with placeholders.
+- `exec-brief` gains an approval email template with WHAT, WHY, WHEN, COST and ASK labels.
+
 ## writing 3.0.0
 
 - Breaking. The `working-style` skill moved to the new `dgonzo` plugin. `/writing:working-style` no longer exists. Install `dgonzo@dgonzo` and load `dgonzo:working-style` instead.

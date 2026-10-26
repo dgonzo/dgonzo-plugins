@@ -138,6 +138,86 @@ Everything else is decoration.
 Foxtrot Charlie scales by **compressing decision latency**, not by managing consensus.
 ```
 
+## Work register patterns
+
+These come from David's Slack and email between August and October 2026. Names and figures are replaced with placeholders. The verbatim messages are in `~/.claude/dgonzo/voice-samples.md` on David's machine only.
+
+### 11. One-line Slack asks
+
+```text
+would you drop the link <Name> shared. I'm going to do a trial run of <task> so we're prepared for tomorrow.
+
+<Name> I've already got <thing>. Let me get you an api key.
+
+I defer to <Name> what he can do and what needs to be on <Name>.
+```
+
+### 12. Short email, name first, signed
+
+```text
+<Name>, looks very good. Let's work with <Name>'s process to get some interviews scheduled. --dg
+
+These will be done.
+
+<Name> I put 30 minutes tomorrow. Really appreciate it. --dg
+```
+
+### 13. Point, owner and next step
+
+```text
+<Name>, I'm working this week on <work> but based on this we need <thing>. I'll draft a spec with <Name> to deliver this so that <system> doesn't have to <cost>. --dg
+
+<Vendor> and <Customer> are our biggest reasons to <goal>. <Name>, would you grab these requirements and we'll discuss prioritizing <work>.
+```
+
+### 14. Numbers as receipts
+
+```text
+We compared your <items> with ours and got almost <n>% coverage, which we're ok with, we have avenues to fill the remainder.
+```
+
+### 15. Structured approval request
+
+This layout got a yes within three hours. A long email that reasoned out loud on a similar topic did not land with the same reader.
+
+```text
+<Name>,
+
+I need your approval for a <term> <thing> at <amount>. <Name> is reviewing <item>. <Party> wants <action> by <date>.
+
+WHAT WE ARE BUYING
+   - <fact>
+WHY
+   - <fact with a number>
+WHEN
+   - <date>
+COST
+   - <amount>, and how it was negotiated
+ASK
+
+Approve the <amount> spend. Once <condition>, we will <action>.
+
+Thank you,
+
+--dg
+```
+
+### 16. Team post
+
+```text
+Team, now that <change> I want to communicate <what> and what I would like from everyone in terms of <practice>:
+
+<who reports to whom, one line each>
+
+I would like for <names> to <action> at least <cadence>.
+
+Our goal is to, by <date>, be <state>.
+
+Thank you each for how you've worked to get us moving in a good direction.
+
+--dg
+```
+
 ## Add samples here
 
-David: paste a piece you wrote yourself and would send again unchanged. Any channel helps. Add each one as a new numbered section above this heading. Give it a one-line label, then the source and date. Put the text verbatim in a `text` fence. Remove any customer names or confidential numbers first. Samples from channels with no entry yet are worth the most. Those are email, Slack and LinkedIn.
+David: add verbatim messages to `~/.claude/dgonzo/voice-samples.md`. Add a pattern here with names and figures replaced by placeholders.

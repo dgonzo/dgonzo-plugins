@@ -1,6 +1,6 @@
 # exec-brief templates
 
-Two skeletons. Replace each placeholder in angle brackets. Delete a section only where the note says it is optional.
+Three skeletons. Replace each placeholder in angle brackets. Delete a section only where the note says it is optional.
 
 ## Slack message
 
@@ -59,6 +59,36 @@ If nobody picks by <date>, <consequence>.
 ```
 
 The Options section is optional. Delete it when the ask is awareness. The Detail section is optional. Delete it when no long document exists.
+
+## Approval email
+
+David's proven layout for a spend or contract approval. One screen. Use capitalised labels in place of Markdown headings. Email clients drop Markdown.
+
+```
+<Name>,
+
+I need your approval for <thing> at <amount>. <Who> is reviewing <what>. <Party> needs <action> by <date>.
+
+WHAT WE ARE BUYING
+   - <fact>
+
+WHY
+   - <fact with a number and its source>
+
+WHEN
+   - <date or lead time>
+
+COST
+   - <amount>, and the baseline it beat
+
+ASK
+
+Approve the <amount> spend. Once <condition>, we will <action>.
+
+Thank you,
+
+--dg
+```
 
 ## Pass 3 check
 
