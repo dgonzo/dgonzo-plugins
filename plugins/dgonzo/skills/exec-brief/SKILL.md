@@ -25,7 +25,7 @@ It counters detail that buries the ask, where the exec reads three paragraphs an
 4. If there is no source material, ask once for it.
 5. If an `audience-<reader>.md` from `/dgonzo:audience-model` exists for this exec, read its Calibration section.
 6. Find five items in the input. They are the exec by name and role, the ask and the deadline. Then what is blocked and who owns the work.
-7. Find the channel. Slack means at most 150 words. A brief means at most 400 words.
+7. Find the channel. Slack means at most 150 words. A brief means at most 400 words. An approval email for spend or a contract fits one screen.
 8. Classify the ask as a decision or as awareness.
 9. If the ask is a decision, find David's pick.
 10. If any item from steps 6 to 9 is missing, ask for all of them in one message. Do not ask twice.
@@ -41,9 +41,9 @@ It counters detail that buries the ask, where the exec reads three paragraphs an
 20. Load `/writing:writing-standard` for structure and `/dgonzo:voice` for voice.
 21. If `/dgonzo:voice` is not installed, apply only the house standard and tell David.
 22. If the channel is a brief, write it to `exec-brief-<topic>.md` in the repo folder the user is working in. Link it.
-23. If the channel is Slack, return the message in the reply ready to paste.
+23. If the channel is Slack or an approval email, return the message in the reply ready to paste.
 
-The skeletons for both channels are in [references/templates.md](references/templates.md).
+The skeletons for all three channels are in [references/templates.md](references/templates.md).
 
 ## Output
 
