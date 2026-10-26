@@ -12,7 +12,7 @@
 1. Open Customize, then Plugins.
 2. Select Add, then Add marketplace.
 3. Enter `dgonzo/dgonzo-plugins` and select Sync.
-4. Find Writing under Discover and select Add.
+4. Find dgonzo and Writing under Discover and select Add on each.
 5. Turn on Sync automatically so new versions arrive on their own.
 
 ## Claude Code
@@ -20,6 +20,7 @@
 Run this in a terminal:
 
 ```
+claude plugin install dgonzo --marketplace dgonzo/dgonzo-plugins
 claude plugin install writing --marketplace dgonzo/dgonzo-plugins
 ```
 
@@ -33,6 +34,7 @@ Both need Claude Code 2.1.275 or later. On an older version, add the marketplace
 
 ```
 claude plugin marketplace add dgonzo/dgonzo-plugins
+claude plugin install dgonzo@dgonzo
 claude plugin install writing@dgonzo
 ```
 
@@ -55,7 +57,7 @@ Each release ships two files.
 
 | File | Surface | How to install |
 |---|---|---|
-| `writing-<version>.plugin` | Cowork | Open the file, or Customize > Plugins > Add > Upload plugin |
+| `writing-<version>.plugin` | Cowork. The dgonzo plugin installs from the marketplace only. | Open the file, or Customize > Plugins > Add > Upload plugin |
 | `dgonzo-plugins-<version>.zip` | Claude Code | Unzip to a folder you keep, then run the two commands below |
 
 ```
@@ -77,4 +79,5 @@ claude plugin install writing --marketplace dgonzo/dgonzo-plugins
 ## Check a new install
 
 1. Ask "what is the writing rule on bold". The answer quotes Rule 5.
-2. In Claude Code, write a Markdown file with an em-dash aside. The lint hook reports it.
+2. Type `/dgonzo:` and check that `working-style` lists.
+3. In Claude Code, write a Markdown file with an em-dash aside. The lint hook reports it.

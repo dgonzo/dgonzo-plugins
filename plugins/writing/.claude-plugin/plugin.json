@@ -1,11 +1,19 @@
 {
   "name": "writing",
   "displayName": "Writing",
-  "version": "2.0.1",
-  "description": "House writing standard and working style for every surface: chat, Cowork and Claude Code. Four skills (writing-standard, working-style, improve-readability, review-prose), a lint command, a fallback card loaded at session start, a prose linter, and a hook that lints every Markdown file an agent writes. Project tweaks go in a WRITING.md at the repo root.",
-  "author": { "name": "David Gonzalez", "url": "https://github.com/dgonzo" },
+  "version": "3.0.0",
+  "description": "House writing standard for every surface: chat, Cowork and Claude Code. Three skills (writing-standard, improve-readability, review-prose), a lint command, a fallback card loaded at session start, a prose linter, and a hook that lints every Markdown file an agent writes. Project tweaks go in a WRITING.md at the repo root.",
+  "author": {
+    "name": "David Gonzalez",
+    "url": "https://github.com/dgonzo"
+  },
   "homepage": "https://github.com/dgonzo/dgonzo-plugins/tree/main/plugins/writing",
   "repository": "https://github.com/dgonzo/dgonzo-plugins",
   "license": "UNLICENSED",
-  "keywords": ["writing", "style", "readability", "lint"]
+  "keywords": [
+    "writing",
+    "style",
+    "readability",
+    "lint"
+  ]
 }
