@@ -1,6 +1,6 @@
 # dgonzo plugins
 
-Claude plugins by David Gonzalez. Two plugins: dgonzo, his personal skills, and Writing, a house writing standard for chat, Cowork and Claude Code.
+Plugins by David Gonzalez for Claude and Antigravity. Two plugins: dgonzo has his personal skills, and Writing is a house writing standard.
 
 ## Install
 
@@ -13,7 +13,14 @@ claude plugin install dgonzo --marketplace dgonzo/dgonzo-plugins
 claude plugin install writing --marketplace dgonzo/dgonzo-plugins
 ```
 
-Team repos, older Claude Code versions and installs without GitHub are in [INSTALL.md](INSTALL.md).
+Antigravity CLI:
+
+```
+agy plugin install ./plugins/dgonzo
+agy plugin install ./plugins/writing
+```
+
+Antigravity App and IDE setup is in [INSTALL.md](INSTALL.md). Team repos, older Claude Code versions and installs without GitHub are there too.
 
 ## Plugins
 

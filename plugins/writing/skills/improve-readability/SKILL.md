@@ -10,7 +10,7 @@ Review one file against the `writing-standard` skill. Return findings and propos
 ## Steps
 
 1. Load the `writing-standard` skill. If the repo has `WRITING.md`, read it too.
-2. Run the linter and keep its output:
+2. Run [writing_lint.py](../../scripts/writing_lint.py) and keep its output:
 
 ```
 python3 "${CLAUDE_PLUGIN_ROOT}/scripts/writing_lint.py" <path>

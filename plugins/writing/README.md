@@ -32,13 +32,13 @@ flowchart TD
 | Skill | `writing-standard` | the prose rules and the check before you send |
 | Skill | `improve-readability` | review one file, report findings, never edit |
 | Skill | `review-prose` | review a diff, a ref or a PR, report findings, never edit |
-| Command | `/writing:lint <file>` | run the linter on one file and print its output |
-| Card | `standard/card.md` | the short rules, loaded at session start before any skill |
+| Skill | `lint` | run the linter on one file and print its output |
+| Card | `standard/card.md` | the short rules, loaded at session start and via `rules/AGENTS.md` |
 | Script | `scripts/writing_lint.py` | the mechanical rules, exit 0 always |
-| Hook | SessionStart | prints the card into the session context |
-| Hook | PostToolUse on Write and Edit | lints every Markdown file an agent writes and feeds findings back |
+| Hook | SessionStart | prints the card into the session context in Claude |
+| Hook | PostToolUse | lints every Markdown file an agent writes and feeds findings back |
 
-The hooks run in Claude Code and in Cowork sessions on your computer. Chat has no hooks, so chat relies on the skills alone.
+The hooks run in Claude Code, in Cowork sessions on your computer and in Antigravity. Chat has no hooks, so chat relies on the skills alone.
 
 ## Tier 2: the global instruction
 
