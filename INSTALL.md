@@ -4,6 +4,7 @@
 |---|---|---|
 | Claude.ai, Cowork and Claude Code | Add the marketplace in claude.ai | One minute |
 | Claude Code only | One terminal command | One command |
+| Antigravity | Add `plugins.json` or run `agy plugin install` | One minute |
 | A team repo | Commit two settings to the repo | Once per repo |
 | No GitHub access | Release files | One upload |
 
@@ -37,6 +38,27 @@ claude plugin marketplace add dgonzo/dgonzo-plugins
 claude plugin install dgonzo@dgonzo
 claude plugin install writing@dgonzo
 ```
+
+## Antigravity
+
+To load directly from a local clone across every Antigravity surface, add `~/.gemini/config/plugins.json`:
+
+```json
+{
+  "entries": [
+    { "path": "~/Code/dgonzo-plugins/plugins" }
+  ]
+}
+```
+
+To copy the plugins into `~/.gemini/config/plugins/` with the CLI instead, run:
+
+```
+agy plugin install ./plugins/dgonzo
+agy plugin install ./plugins/writing
+```
+
+For a single project repo, add `.agents/plugins.json` at the repo root with the `entries` block above.
 
 ## A team repo
 

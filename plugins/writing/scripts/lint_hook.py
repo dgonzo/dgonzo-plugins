@@ -8,7 +8,12 @@ try:
     event = json.load(sys.stdin)
 except Exception:
     sys.exit(0)
-path = (event.get("tool_input") or {}).get("file_path") or ""
+is_agy = "toolCall" in event
+if is_agy:
+    args = (event.get("toolCall") or {}).get("args") or {}
+    path = args.get("Path") or args.get("TargetFile") or ""
+else:
+    path = (event.get("tool_input") or {}).get("file_path") or ""
 if not path.lower().endswith(PROSE) or not os.path.isfile(path):
     sys.exit(0)
 if "/node_modules/" in path or "/.git/" in path:
@@ -24,4 +29,8 @@ noun = "finding" if len(lines) == 1 else "findings"
 msg = (f"writing-standard linter on {os.path.basename(path)}: {len(lines)} {noun}. Fix each real one before you finish. "
        "Leave only thousands-separator commas, slashes inside paths, and quoted examples of banned text.\n"
        + "\n".join(shown) + more)
-print(json.dumps({"hookSpecificOutput": {"hookEventName": "PostToolUse", "additionalContext": msg}}))
+if is_agy:
+    orig = event.get("result") or ""
+    print(json.dumps({"overwriteResult": f"{orig}\n\n{msg}".strip()}))
+else:
+    print(json.dumps({"hookSpecificOutput": {"hookEventName": "PostToolUse", "additionalContext": msg}}))

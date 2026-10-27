@@ -1,6 +1,6 @@
 VERSION := $(shell python3 -c 'import json; print(json.load(open("plugins/writing/.claude-plugin/plugin.json"))["version"])')
 
-.PHONY: pack release lint
+.PHONY: pack release lint validate
 
 pack:
 	scripts/pack.sh
@@ -14,3 +14,7 @@ release:
 
 lint:
 	python3 plugins/writing/scripts/writing_lint.py $$(git ls-files '*.md')
+
+validate:
+	agy plugin validate plugins/dgonzo
+	agy plugin validate plugins/writing

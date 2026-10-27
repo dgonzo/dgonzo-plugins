@@ -347,6 +347,6 @@ Run this on every message and every document. It is not optional. The user will 
 11. Any metaphor, personification or narrative voice? Any idiom? Replace it with the fact.
 12. Remove one word at a time. If the meaning survives, it was wrong.
 
-The linter ships with this plugin: `python3 "${CLAUDE_PLUGIN_ROOT}/scripts/writing_lint.py" path.md`. A project linter named in `WRITING.md` runs as well. Fix every real finding before the commit. The only findings to leave are thousands-separator commas, slashes inside paths and quoted examples of banned text.
+The linter ships with this plugin in [writing_lint.py](../../scripts/writing_lint.py): `python3 "${CLAUDE_PLUGIN_ROOT}/scripts/writing_lint.py" path.md`. A project linter named in `WRITING.md` runs as well. Fix every real finding before the commit. The only findings to leave are thousands-separator commas, slashes inside paths and quoted examples of banned text.
 
 The linter catches the surface. It never catches a buried point or a compressed heading. Read it as a reader before sending.

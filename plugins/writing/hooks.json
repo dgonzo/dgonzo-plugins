@@ -1,0 +1,16 @@
+{
+  "writing-lint": {
+    "PostToolUse": [
+      {
+        "matcher": "write_file|edit_file",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 ./scripts/lint_hook.py",
+            "timeout": 20
+          }
+        ]
+      }
+    ]
+  }
+}

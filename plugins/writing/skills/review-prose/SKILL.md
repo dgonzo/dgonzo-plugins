@@ -24,7 +24,7 @@ Prose files are Markdown and plain text, including Quarto and MDX. Skip code and
    - no argument: `git diff --name-only` filtered to prose files. Then `git diff -- <files>`
    - a ref: `git diff <ref> --name-only` filtered to prose files. Then `git diff <ref> -- <files>`
    - a PR number: `gh pr diff <n> --name-only` filtered to prose files. Then `gh pr diff <n>` and read only the hunks of those files
-3. Run the linter and keep its output. For the no-argument and ref forms, lint the changed prose files in the working tree:
+3. Run [writing_lint.py](../../scripts/writing_lint.py) and keep its output. For the no-argument and ref forms, lint the changed prose files in the working tree:
 
 ```
 python3 "${CLAUDE_PLUGIN_ROOT}/scripts/writing_lint.py" <files>
