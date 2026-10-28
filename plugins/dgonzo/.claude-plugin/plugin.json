@@ -1,11 +1,17 @@
 {
   "name": "dgonzo",
   "displayName": "dgonzo",
-  "version": "1.1.0",
-  "description": "Personal session habits for Claude. One skill, working-style: answer first, do not narrate, do the work, keep to the objective. The prose rules are in the writing plugin.",
-  "author": { "name": "David Gonzalez", "url": "https://github.com/dgonzo" },
+  "version": "1.2.0",
+  "description": "David Gonzalez's 17 personal skills: working style, voice, reasoning, judgment and leadership. Shared across Claude, Antigravity, Codex and ChatGPT.",
+  "author": {
+    "name": "David Gonzalez",
+    "url": "https://github.com/dgonzo"
+  },
   "homepage": "https://github.com/dgonzo/dgonzo-plugins/tree/main/plugins/dgonzo",
   "repository": "https://github.com/dgonzo/dgonzo-plugins",
   "license": "UNLICENSED",
-  "keywords": ["working-style", "habits"]
+  "keywords": [
+    "working-style",
+    "habits"
+  ]
 }

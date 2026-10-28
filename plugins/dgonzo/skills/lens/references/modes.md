@@ -2,7 +2,7 @@
 
 This file lists all 45 reasoning modes in 7 categories. Each entry gives the mode's lookup name and purpose. Then it gives the prompt and when to use it.
 
-The `lens` skill reads this file. The lookup name is what follows `/dgonzo:lens`, as in `/dgonzo:lens skeptic`. Each prompt keeps the source wording in sentence case. Fill any placeholder such as `[X]` from the input before running the prompt.
+The `lens` skill reads this file. The lookup name is what follows `dgonzo:lens`, as in `dgonzo:lens skeptic`. Each prompt keeps the source wording in sentence case. Fill any placeholder such as `[X]` from the input before running the prompt.
 
 | Category | Modes | Job |
 |---|---|---|

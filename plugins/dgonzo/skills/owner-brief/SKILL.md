@@ -1,6 +1,6 @@
 ---
 name: owner-brief
-description: Turn work that is about to change hands into a brief with one accountable owner, a one-sentence objective, a facts table, ordered steps, owned blockers and a "Done when" checklist. The receiver is a person or a future Claude session. Use for "write a handoff brief", "brief the next session", "who owns this and when is it done", "pass this work to a teammate" or "set up a fresh session for this". Also for /dgonzo:owner-brief. Not for status reports (ragb), an implementation plan (superpowers:writing-plans) or gh and make commands that ship data-org docs (data-org-cowork-plugin:handoff).
+description: Turn work that is about to change hands into a brief with one accountable owner, a one-sentence objective, a facts table, ordered steps, owned blockers and a "Done when" checklist. The receiver is a person or a future agent session. Use for "write a handoff brief", "brief the next session", "who owns this and when is it done", "pass this work to a teammate" or "set up a fresh session for this". Also for dgonzo:owner-brief. Not for status reports (ragb), an implementation plan (superpowers:writing-plans) or gh and make commands that ship data-org docs (data-org-cowork-plugin:handoff).
 ---
 
 # owner-brief
@@ -20,7 +20,7 @@ This skill writes a handoff brief that one named owner can act on without asking
 1. If the user named a file or thread, read it.
 2. If the user named nothing and this conversation holds the work, use the conversation as the source.
 3. If neither holds the work, ask once for the work and the receiver. Wait for the answer.
-4. If `/writing:writing-standard` is available, load it. Otherwise write point first. Use one idea per sentence. Use no em dashes and no semicolons.
+4. If `writing:writing-standard` is available, load it. Otherwise write point first. Use one idea per sentence. Use no em dashes and no semicolons.
 5. Write the objective in one sentence. If it needs two, the work is two briefs. Hold that as a gap for step 9.
 6. List at most 12 facts the receiver needs to act. Give each fact a concrete value such as a path or a date. Drop any fact the receiver can find in under a minute.
 7. Check for gaps. Who owns the work and who receives it? What is the done-when and the deadline? Who owns each blocker? Which brief comes first, if step 5 found two?
@@ -34,7 +34,7 @@ This skill writes a handoff brief that one named owner can act on without asking
 15. Write each "Done when" item as a state a second person can check with yes or no. Rewrite any item that describes activity.
 16. If the receiver is a Claude session, add a "How to start" block with absolute paths and the exact `claude` command.
 17. Write the brief as Markdown in the repo folder the user is working in. Use a `scratch/` folder if one exists. Name it `YYYY-MM-DD-<slug>-handoff.md`.
-18. If `/writing:lint` is available, run it on the brief and fix every real finding.
+18. If `writing:lint` is available, run it on the brief and fix every real finding.
 19. Reply with a link to the brief and its bottom line. Do not paste the brief into the reply.
 
 The section template and examples of good and bad "Done when" items are in [the brief template](references/brief-template.md).
@@ -59,6 +59,6 @@ The brief has these sections, in order.
 - Never asks more than 5 questions or asks a second round.
 - Never invents a fact, a path or a name. Unknowns become questions or assumptions.
 - Never runs the steps it writes.
-- Never reports progress or health. That is `/dgonzo:ragb`.
+- Never reports progress or health. That is `dgonzo:ragb`.
 - Never packages gh or make commands for data-org docs. That is `data-org-cowork-plugin:handoff`.
 - Never writes the brief as an HTML artifact.

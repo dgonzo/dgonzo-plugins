@@ -1,6 +1,6 @@
 ---
 name: postmortem
-description: Write a blameless postmortem for an incident, a missed launch, a failed project or a lost deal. Builds a sourced timeline, tests which single changes would have prevented it, checks for precedent, and ends with dated actions that each have one owner. Use for "write a postmortem", "incident review for", "what went wrong with the launch", "why did we lose the deal" or "blameless review of". Also for /dgonzo:postmortem. Not for a pre-mortem on a plan that has not run yet (architecture-stress-test), a status report on work still in flight (ragb), debugging a live bug (superpowers:systematic-debugging) or a short incident notice to the company (internal-comms).
+description: Write a blameless postmortem for an incident, a missed launch, a failed project or a lost deal. Builds a sourced timeline, tests which single changes would have prevented it, checks for precedent, and ends with dated actions that each have one owner. Use for "write a postmortem", "incident review for", "what went wrong with the launch", "why did we lose the deal" or "blameless review of". Also for dgonzo:postmortem. Not for a pre-mortem on a plan that has not run yet (architecture-stress-test), a status report on work still in flight (ragb), debugging a live bug (superpowers:systematic-debugging) or a short incident notice to the company (internal-comms).
 ---
 
 # postmortem
@@ -42,7 +42,7 @@ A blame story names a person and stops. The cause is the condition that let a no
 21. If an owner or date is still unknown, write "Owner needed" or "Date needed". List it in the bottom line.
 22. Write the document as Markdown with [references/template.md](references/template.md). Put it in the repo folder the user is working in. If the repo has a postmortems folder, use that.
 23. Name the file `postmortem-<yyyy-mm-dd>-<slug>.md`, dated by the event.
-24. If the `/writing:lint` command is available, run it on the file and fix every real finding.
+24. If the `writing:lint` command is available, run it on the file and fix every real finding.
 25. Reply with the bottom line and a relative link to the file.
 
 ## Output
@@ -57,7 +57,7 @@ The document has these sections in this order.
 6. Actions. One row per action. Each row names one owner, a due date and the cause it removes.
 7. Evidence gaps. Each missing source and the question it would settle.
 
-Prose follows `/writing:writing-standard`.
+Prose follows `writing:writing-standard`.
 
 ## Limits
 
@@ -68,5 +68,5 @@ Prose follows `/writing:writing-standard`.
 - Never invents an owner, a date or a number.
 - Never gives an action two owners or a team as owner.
 - Never rates individual performance. That belongs to a manager, not a postmortem.
-- Never reviews a plan that has not run yet. That is `/dgonzo:architecture-stress-test`.
+- Never reviews a plan that has not run yet. That is `dgonzo:architecture-stress-test`.
 - Never writes an HTML artifact. The document is Markdown in the repo.

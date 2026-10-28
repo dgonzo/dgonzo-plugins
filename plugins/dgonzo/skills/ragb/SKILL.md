@@ -1,6 +1,6 @@
 ---
 name: ragb
-description: Write or audit a team status in RAGB. Every initiative gets one owner, one honest colour, one pointable fact and one next move. RED means at risk of not shipping. AMBER means standard operating risk. GREEN means shipped, verified and in the customer's hands. BLACK means stopped. Use for "write the team status in RAGB", "audit this status report", "is this status honest", "RAGB the weekly update" or "RAGB this thread". Also for /dgonzo:ragb. Not for a standup of your own activity (slack:standup), a status update in the company comms format (internal-comms) or make and gh commands for the data-org board (data-org-cowork-plugin:handoff). Not for ranking priorities (cut-list), handing off work (owner-brief) or a postmortem on finished work (postmortem).
+description: Write or audit a team status in RAGB. Every initiative gets one owner, one honest colour, one pointable fact and one next move. RED means at risk of not shipping. AMBER means standard operating risk. GREEN means shipped, verified and in the customer's hands. BLACK means stopped. Use for "write the team status in RAGB", "audit this status report", "is this status honest", "RAGB the weekly update" or "RAGB this thread". Also for dgonzo:ragb. Not for a standup of your own activity (slack:standup), a status update in the company comms format (internal-comms) or make and gh commands for the data-org board (data-org-cowork-plugin:handoff). Not for ranking priorities (cut-list), handing off work (owner-brief) or a postmortem on finished work (postmortem).
 ---
 
 # ragb
@@ -59,7 +59,7 @@ A recolour table has these columns.
 
 Each colour is a heading over its own table. RED always comes first. Leave out an empty colour.
 
-The prose follows `/writing:writing-standard`.
+The prose follows `writing:writing-standard`.
 
 ## Limits
 
@@ -68,7 +68,7 @@ The prose follows `/writing:writing-standard`.
 - Never accepts two owners for one initiative.
 - Never reports effort, meetings or hours as a fact.
 - Never summarises one person's own activity. That is `slack:standup`.
-- Never ranks priorities or cuts work. That is `/dgonzo:cut-list`.
-- Never writes a handoff. That is `/dgonzo:owner-brief`.
+- Never ranks priorities or cuts work. That is `dgonzo:cut-list`.
+- Never writes a handoff. That is `dgonzo:owner-brief`.
 - Never posts to Slack or edits a ticket. It writes the Markdown file and the reply.
 - Never writes an HTML artifact.

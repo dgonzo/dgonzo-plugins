@@ -218,6 +218,8 @@ Each bullet has one idea. One level of nesting, never two.
 
 ### Steps
 
+Resolve [writing_lint.py](../../scripts/writing_lint.py) relative to this skill file, following symlinks. Set `WRITING_LINTER` to that absolute path in the shell running the commands. If Python or file access is unavailable, report that limitation and perform only the manual review. Never claim the linter ran when it did not.
+
 Steps are a numbered list. One action per item, in the imperative form.
 
 Put the condition before the command. Write "If the gate fails, fix the citation". Never "Fix the citation if the gate fails".
@@ -347,6 +349,8 @@ Run this on every message and every document. It is not optional. The user will 
 11. Any metaphor, personification or narrative voice? Any idiom? Replace it with the fact.
 12. Remove one word at a time. If the meaning survives, it was wrong.
 
-The linter ships with this plugin in [writing_lint.py](../../scripts/writing_lint.py): `python3 "${CLAUDE_PLUGIN_ROOT}/scripts/writing_lint.py" path.md`. A project linter named in `WRITING.md` runs as well. Fix every real finding before the commit. The only findings to leave are thousands-separator commas, slashes inside paths and quoted examples of banned text.
+Resolve the linter relative to this skill file, following symlinks. Set `WRITING_LINTER` to that absolute path before running the command. If Python or file access is unavailable, use the manual check and state that automated lint was unavailable.
+
+The linter ships with this plugin in [writing_lint.py](../../scripts/writing_lint.py): `python3 "${WRITING_LINTER}" path.md`. A project linter named in `WRITING.md` runs as well. Fix every real finding before the commit. The only findings to leave are thousands-separator commas, slashes inside paths and quoted examples of banned text.
 
 The linter catches the surface. It never catches a buried point or a compressed heading. Read it as a reader before sending.

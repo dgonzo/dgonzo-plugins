@@ -6,7 +6,7 @@ David Gonzalez's personal skills. House prose rules are in the [writing plugin](
 /plugin install dgonzo --marketplace dgonzo/dgonzo-plugins
 ```
 
-Cowork and older Claude Code versions are in [INSTALL.md](../../INSTALL.md).
+Codex, ChatGPT, Cowork and older Claude Code versions are in [INSTALL.md](../../INSTALL.md).
 
 ## Which style applies
 

@@ -1,6 +1,6 @@
 ---
 name: voice
-description: Draft or rewrite text in David's own professional voice for anything sent under his name. Covers Slack messages, emails, LinkedIn opinion posts, essays and memos. Name first, then the ask. Owners named, numbers as receipts, short and warm at work. Flat conviction in essays. Use for "write this in my voice", "make this sound like me", "draft a Slack reply from me", "reply to this as me" or "rewrite my email". Also for /dgonzo:voice. Not for team documents or a plain PR description, which follow /writing:writing-standard. Not for a launch post, blog post or demo about something built, which is /dgonzo:signal-cut. Not for an internal Slack announcement, which is /slack:draft-announcement. Not for a brief that asks executives for a decision, which is /dgonzo:exec-brief.
+description: Draft or rewrite text in David's own professional voice for anything sent under his name. Covers Slack messages, emails, LinkedIn opinion posts, essays and memos. Name first, then the ask. Owners named, numbers as receipts, short and warm at work. Flat conviction in essays. Use for "write this in my voice", "make this sound like me", "draft a Slack reply from me", "reply to this as me" or "rewrite my email". Also for dgonzo:voice. Not for team documents or a plain PR description, which follow writing:writing-standard. Not for a launch post, blog post or demo about something built, which is dgonzo:signal-cut. Not for an internal Slack announcement, which is /slack:draft-announcement. Not for a brief that asks executives for a decision, which is dgonzo:exec-brief.
 ---
 
 # voice
@@ -9,7 +9,7 @@ This skill produces a draft that reads as David wrote it, ready for him to send 
 
 David writes in two registers. The work register covers Slack and email, and it is the default. The essay register covers LinkedIn opinion posts and essays. Pick the register before drafting.
 
-Read [references/samples.md](references/samples.md) before every draft. If `~/.claude/dgonzo/voice-samples.md` exists, read it too. It has his verbatim work messages and stays out of this public repo.
+Read [references/samples.md](references/samples.md) before every draft. If `~/.config/dgonzo/voice-samples.md` is accessible, read it too. Otherwise use `~/.claude/dgonzo/voice-samples.md` when accessible. In a remote chat, use a private reference supplied by David if available. Do not assume access to files on his machine. Keep verbatim private messages out of this public repo.
 
 ## Work register
 
@@ -27,7 +27,7 @@ Read [references/samples.md](references/samples.md) before every draft. If `~/.c
 
 Slack may be lowercase and casual in a one-line DM. Never add typos. One Slack emoji code is fine in a warm internal message, such as `:slightly_smiling_face:`.
 
-A long email that reasons out loud does not land with executives. A structured ask with the decision in the first line gets a fast yes. For an exec, use `/dgonzo:exec-brief`.
+A long email that reasons out loud does not land with executives. A structured ask with the decision in the first line gets a fast yes. For an exec, use `dgonzo:exec-brief`.
 
 ## Essay register
 
@@ -86,7 +86,7 @@ The work register departs only in small ways. It allows greetings and sign-offs.
 ## Steps
 
 1. Read the sample files named above.
-2. If the text is a team document, stop and apply `/writing:writing-standard` instead.
+2. If the text is a team document, stop and apply `writing:writing-standard` instead.
 3. If the user named a source to rewrite or reply to, read it first.
 4. If the channel or the reader or the point is missing, ask once. Put all gaps in one message.
 5. Pick the register and the channel row.

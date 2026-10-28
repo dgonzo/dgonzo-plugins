@@ -1,6 +1,6 @@
 ---
 name: build-vs-buy
-description: Compare building, buying, partnering and doing nothing on the same criteria, then recommend one option with the evidence behind every score. Weighs who runs it at 2am, the integration and exit cost and the 18-month outlook. Marks every vendor claim unverified until someone checks it. Use for "should we build or buy", "pick a vendor", "should we adopt this tool", "is this SaaS worth paying for" or "build, buy or partner". Also for /dgonzo:build-vs-buy. Not for testing a vendor choice already made or a choice between two designs the team builds itself (decision-forge). Not for sorting the claims in one vendor pitch (truth-extract).
+description: Compare building, buying, partnering and doing nothing on the same criteria, then recommend one option with the evidence behind every score. Weighs who runs it at 2am, the integration and exit cost and the 18-month outlook. Marks every vendor claim unverified until someone checks it. Use for "should we build or buy", "pick a vendor", "should we adopt this tool", "is this SaaS worth paying for" or "build, buy or partner". Also for dgonzo:build-vs-buy. Not for testing a vendor choice already made or a choice between two designs the team builds itself (decision-forge). Not for sorting the claims in one vendor pitch (truth-extract).
 ---
 
 # build-vs-buy
@@ -42,7 +42,7 @@ This skill produces a scored recommendation to build, buy or partner against a d
 
 ## Output
 
-The document has these sections, in this order. Its prose follows `/writing:writing-standard`.
+The document has these sections, in this order. Its prose follows `writing:writing-standard`.
 
 1. Bottom line. The recommendation in one sentence. Then what is blocked and who owns it.
 2. Scorecard. One row per option with its total and its count of Claimed scores.
@@ -60,5 +60,5 @@ The document has these sections, in this order. Its prose follows `/writing:writ
 - Never drops do nothing from the comparison.
 - Never invents a decider, an owner or a number. A gap stays marked as a gap.
 - Never contacts a vendor, starts a trial or sends a message.
-- Never chooses between two internal designs or retests a vendor already chosen. That is `/dgonzo:decision-forge`.
+- Never chooses between two internal designs or retests a vendor already chosen. That is `dgonzo:decision-forge`.
 - Never writes the result as an HTML artifact.

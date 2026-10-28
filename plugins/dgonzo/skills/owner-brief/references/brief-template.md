@@ -1,6 +1,6 @@
 # Owner brief template
 
-Copy this skeleton into the brief. Replace every angle-bracket field. Delete "How to start" when the receiver is a person. Delete "Assumptions" when no gap stayed open.
+Use the receiver’s agent CLI in the launch command, or give the prompt directly in their app. Copy this skeleton into the brief. Replace every angle-bracket field. Delete "How to start" when the receiver is a person. Delete "Assumptions" when no gap stayed open.
 
 ```markdown
 # <Objective as a short title>
@@ -12,7 +12,7 @@ Copy this skeleton into the brief. Replace every angle-bracket field. Delete "Ho
 | Role | Name |
 |---|---|
 | Accountable owner | <one person> |
-| Receiver | <person or "a fresh Claude session"> |
+| Receiver | <person or "a fresh agent session"> |
 | Deadline | <date or "none set"> |
 
 ## Facts the receiver needs
@@ -24,7 +24,7 @@ Copy this skeleton into the brief. Replace every angle-bracket field. Delete "Ho
 ## How to start
 
     cd <absolute repo path>
-    claude "Read <absolute path to this brief> and do phase 1."
+    <agent-cli> "Read <absolute path to this brief> and do phase 1."
 
 ## Phase 1 <name>
 
@@ -61,7 +61,7 @@ Each item names a state, not an activity. A second person must be able to check 
 | "Review the migration." | "`make test` exits 0 on `main`." |
 | "Work on the dashboard." | "The dashboard shows October rows for all three regions." |
 | "Coordinate with Ana." | "Ana has approved PR 42." |
-| "Phase 1 is complete." | "`/dgonzo:working-style` lists in a fresh session." |
+| "Phase 1 is complete." | "`dgonzo:working-style` lists in a fresh session." |
 
 ## Good interview questions
 
@@ -73,4 +73,4 @@ Each question closes one gap and takes 5 words or fewer to answer.
 | Done when | "What do you check to call it done?" |
 | Blocker owner | "Who clears the vendor access?" |
 | Deadline | "Is there a date this must land by?" |
-| Receiver | "Person or fresh Claude session?" |
+| Receiver | "Person or fresh agent session?" |

@@ -1,6 +1,6 @@
 # dgonzo plugins
 
-Plugins by David Gonzalez for Claude and Antigravity. Two plugins: dgonzo has his personal skills, and Writing is a house writing standard.
+Plugins by David Gonzalez for Claude and Antigravity, plus Codex and ChatGPT. Two plugins: dgonzo has his personal skills, and Writing is a house writing standard.
 
 ## Install
 
@@ -21,6 +21,16 @@ agy plugin install ./plugins/writing
 ```
 
 Antigravity App and IDE setup is in [INSTALL.md](INSTALL.md). Team repos, older Claude Code versions and installs without GitHub are there too.
+
+## Codex and ChatGPT desktop
+
+```sh
+codex plugin marketplace add dgonzo/dgonzo-plugins --ref main
+codex plugin add dgonzo@dgonzo
+codex plugin add writing@dgonzo
+```
+
+Start a new chat after installation. Hook trust and global style loading are covered in [INSTALL.md](INSTALL.md). That guide also covers updates and ChatGPT workspace imports.
 
 ## Plugins
 
