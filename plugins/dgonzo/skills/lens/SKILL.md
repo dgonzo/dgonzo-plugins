@@ -1,6 +1,6 @@
 ---
 name: lens
-description: Run one or more of 45 named reasoning modes on a doc, plan, decision or thread. Each mode gets its own section, then a short note on what changed in the user's view. Use for "run a pre-mortem on this", "steel-man this argument", "play devil's advocate", "look at this through a lens" or "what would a skeptic say". Also for /dgonzo:lens with an optional mode name, such as /dgonzo:lens skeptic. Not for a job a dgonzo compound skill owns, such as a full decision test (decision-forge), a plan review (architecture-stress-test), checking claims in notes (truth-extract), a candidate debrief (hiring-debrief), a postmortem (postmortem) or a status report (ragb).
+description: Run one or more of 45 named reasoning modes on a doc, plan, decision or thread. Each mode gets its own section, then a short note on what changed in the user's view. Use for "run a pre-mortem on this", "steel-man this argument", "play devil's advocate", "look at this through a lens" or "what would a skeptic say". Also for dgonzo:lens with an optional mode name, such as dgonzo:lens skeptic. Not for a job a dgonzo compound skill owns, such as a full decision test (decision-forge), a plan review (architecture-stress-test), checking claims in notes (truth-extract), a candidate debrief (hiring-debrief), a postmortem (postmortem) or a status report (ragb).
 ---
 
 # lens
@@ -59,22 +59,22 @@ Three modes in a fixed order counter one failure mode. These stacks have their o
 
 | Job | Stack | Skill |
 |---|---|---|
-| Test a pending decision | Adversarial, Steel-man, Calibration | `/dgonzo:decision-forge` |
-| Check claims in notes or transcripts | Forensic, Socratic, Uncertainty | `/dgonzo:truth-extract` |
-| Review the phases of a plan | Analytical, Pre-mortem, Comparative | `/dgonzo:architecture-stress-test` |
-| Name a product or command | Dialectical, Aesthetic, Combinatorial | `/dgonzo:naming-forge` |
-| Choose to build or buy | Comparative, Operator, Futurist | `/dgonzo:build-vs-buy` |
-| Write a status report | Forensic, Calibration, Reductive | `/dgonzo:ragb` |
-| Hand off work | Reductive, Interviewer, Planning | `/dgonzo:owner-brief` |
-| Cut a backlog | Prioritizing, Counterfactual, Reductive | `/dgonzo:cut-list` |
-| Explain a failure | Forensic, Counterfactual, Historian | `/dgonzo:postmortem` |
-| Debrief a hiring loop | Forensic, Calibration, Devil's Advocate | `/dgonzo:hiring-debrief` |
-| Write a launch post | Narrative, Subversive, Practitioner | `/dgonzo:signal-cut` |
-| Write a tagline or position | Reductive, Comparative, Aesthetic | `/dgonzo:position-lock` |
-| Model a reader | Modeling, Interviewer, Forensic | `/dgonzo:audience-model` |
-| Brief an executive | Translator, Reductive, Modeling | `/dgonzo:exec-brief` |
+| Test a pending decision | Adversarial, Steel-man, Calibration | `dgonzo:decision-forge` |
+| Check claims in notes or transcripts | Forensic, Socratic, Uncertainty | `dgonzo:truth-extract` |
+| Review the phases of a plan | Analytical, Pre-mortem, Comparative | `dgonzo:architecture-stress-test` |
+| Name a product or command | Dialectical, Aesthetic, Combinatorial | `dgonzo:naming-forge` |
+| Choose to build or buy | Comparative, Operator, Futurist | `dgonzo:build-vs-buy` |
+| Write a status report | Forensic, Calibration, Reductive | `dgonzo:ragb` |
+| Hand off work | Reductive, Interviewer, Planning | `dgonzo:owner-brief` |
+| Cut a backlog | Prioritizing, Counterfactual, Reductive | `dgonzo:cut-list` |
+| Explain a failure | Forensic, Counterfactual, Historian | `dgonzo:postmortem` |
+| Debrief a hiring loop | Forensic, Calibration, Devil's Advocate | `dgonzo:hiring-debrief` |
+| Write a launch post | Narrative, Subversive, Practitioner | `dgonzo:signal-cut` |
+| Write a tagline or position | Reductive, Comparative, Aesthetic | `dgonzo:position-lock` |
+| Model a reader | Modeling, Interviewer, Forensic | `dgonzo:audience-model` |
+| Brief an executive | Translator, Reductive, Modeling | `dgonzo:exec-brief` |
 
-These stacks from the source have no skill. Run them as `/dgonzo:lens` with all three modes named.
+These stacks from the source have no skill. Run them as `dgonzo:lens` with all three modes named.
 
 | Job | Stack |
 |---|---|
@@ -90,7 +90,7 @@ These stacks from the source have no skill. Run them as `/dgonzo:lens` with all 
 3. One section per lens, headed with the mode name. A finding lens lists findings, each tied to a quote or line. A producing lens gives its output.
 4. What changed. The user's view before and after, in at most 3 bullets.
 
-Output prose follows `/writing:writing-standard`.
+Output prose follows `writing:writing-standard`.
 
 ## Limits
 

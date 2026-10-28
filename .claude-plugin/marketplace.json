@@ -1,6 +1,6 @@
 {
   "name": "dgonzo",
-  "description": "Plugins by David Gonzalez (dgonzo). Two plugins: dgonzo, his personal session habits, voice and judgment skills, and writing, a house writing standard for chat, Cowork and Claude Code.",
+  "description": "Personal and writing skills by David Gonzalez for Claude, Antigravity, Codex and ChatGPT.",
   "owner": {
     "name": "David Gonzalez",
     "url": "https://github.com/dgonzo"
@@ -10,7 +10,7 @@
       "name": "dgonzo",
       "displayName": "dgonzo",
       "source": "./plugins/dgonzo",
-      "description": "David Gonzalez's personal skills: working style, his own voice, reasoning lenses and judgment passes, and leadership routines.",
+      "description": "David Gonzalez's 17 personal skills: working style, voice, reasoning, judgment and leadership. Shared across Claude, Antigravity, Codex and ChatGPT.",
       "author": {
         "name": "David Gonzalez",
         "url": "https://github.com/dgonzo"
@@ -28,7 +28,7 @@
       "name": "writing",
       "displayName": "Writing",
       "source": "./plugins/writing",
-      "description": "House writing standard, readability and prose reviews, linter and hooks. Works in chat, Cowork and Claude Code.",
+      "description": "House writing standard, readability review, prose review and lint. Four shared skills, a writing card, and advisory lint hooks for Claude, Antigravity and Codex. Project overrides live in WRITING.md.",
       "author": {
         "name": "David Gonzalez",
         "url": "https://github.com/dgonzo"

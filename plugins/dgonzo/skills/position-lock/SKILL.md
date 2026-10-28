@@ -1,6 +1,6 @@
 ---
 name: position-lock
-description: Turn a product, project or idea that is described as a list of features into one position and a headline of 10 words or fewer. Strips it to the one thing it makes possible. Tests that against the status quo, the closest competitor and the category. Then scores headline candidates. Use for "write a tagline", "sharpen our positioning", "elevator pitch for this", "landing page headline" or "how do we stand apart from X". Also for /dgonzo:position-lock. Not for blog posts or announcements (signal-cut), product names (naming-forge) or choosing a vendor (build-vs-buy).
+description: Turn a product, project or idea that is described as a list of features into one position and a headline of 10 words or fewer. Strips it to the one thing it makes possible. Tests that against the status quo, the closest competitor and the category. Then scores headline candidates. Use for "write a tagline", "sharpen our positioning", "elevator pitch for this", "landing page headline" or "how do we stand apart from X". Also for dgonzo:position-lock. Not for blog posts or announcements (signal-cut), product names (naming-forge) or choosing a vendor (build-vs-buy).
 ---
 
 # position-lock
@@ -17,9 +17,9 @@ Produces one position statement, a territory map and a headline of 10 words or f
 
 ## Steps
 
-1. Load `/dgonzo:voice`. The result is sent under David's name. If that skill is not installed, follow `/writing:writing-standard` instead.
+1. Load `dgonzo:voice`. The result is sent under David's name. If that skill is not installed, follow `writing:writing-standard` instead.
 2. If the input is missing, ask once for three things. Ask what it is, who it is for and who it competes with.
-3. Otherwise read the file, thread or pasted text the user named. If a reader model from `/dgonzo:audience-model` is in the thread or folder, use it for who it is for.
+3. Otherwise read the file, thread or pasted text the user named. If a reader model from `dgonzo:audience-model` is in the thread or folder, use it for who it is for.
 4. List every feature and claim in the input. Count them.
 5. Drop each claim the input does not show and each phrase that any product in the category would use.
 6. Write the reductive sentence: what a user can now do that they could not do before.
@@ -45,7 +45,7 @@ Produces one position statement, a territory map and a headline of 10 words or f
 6. Cut features. Each feature that left the headline and where it goes now. Most become proof points under the headline.
 7. Assumptions. Every competitor claim or user fact you did not get from a source.
 
-The prose follows `/dgonzo:voice`.
+The prose follows `dgonzo:voice`.
 
 ## Limits
 
@@ -53,7 +53,7 @@ The prose follows `/dgonzo:voice`.
 - Never presents a list of features as a position.
 - Never claims a capability the input does not show.
 - Never states a competitor's claim without a source. Unsourced claims go under Assumptions.
-- Never names the product. That belongs to `/dgonzo:naming-forge`.
-- Never writes the blog post, announcement or page body. That belongs to `/dgonzo:signal-cut`.
-- Never picks between vendors to buy. That belongs to `/dgonzo:build-vs-buy`.
+- Never names the product. That belongs to `dgonzo:naming-forge`.
+- Never writes the blog post, announcement or page body. That belongs to `dgonzo:signal-cut`.
+- Never picks between vendors to buy. That belongs to `dgonzo:build-vs-buy`.
 - Never writes an HTML artifact.

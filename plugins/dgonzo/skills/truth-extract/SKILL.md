@@ -1,6 +1,6 @@
 ---
 name: truth-extract
-description: Sort every claim in field notes, meeting transcripts, customer interviews, competitor material, vendor claims or Slack threads into Grounded, Inferred or Asserted. Cites the source of each claim and lists the questions that would ground the rest. Use for "what do we actually know from this", "separate fact from opinion", "is this claim backed by anything", "extract the facts from these notes" or "how much of this vendor pitch is true". Also for /dgonzo:truth-extract. Not for choosing between options or vendors (decision-forge, build-vs-buy), finding the cause of an incident (postmortem), auditing a status report (ragb), judging a job candidate (hiring-debrief) or checking that a data analysis or query supports its conclusions (data:validate-data).
+description: Sort every claim in field notes, meeting transcripts, customer interviews, competitor material, vendor claims or Slack threads into Grounded, Inferred or Asserted. Cites the source of each claim and lists the questions that would ground the rest. Use for "what do we actually know from this", "separate fact from opinion", "is this claim backed by anything", "extract the facts from these notes" or "how much of this vendor pitch is true". Also for dgonzo:truth-extract. Not for choosing between options or vendors (decision-forge, build-vs-buy), finding the cause of an incident (postmortem), auditing a status report (ragb), judging a job candidate (hiring-debrief) or checking that a data analysis or query supports its conclusions (data:validate-data).
 ---
 
 # truth-extract
@@ -46,14 +46,14 @@ The report has these sections, in this order.
 5. Asserted. A table with columns Claim, Speaker and Source. Rank rows by what depends on them.
 6. Questions to ask. A numbered list, at most 7. Each item gives the question, who can answer it and which claim it would ground.
 
-Output prose follows `/writing:writing-standard`. Every claim cites its location in the source. Name every person on first use. Add their role if the source gives it.
+Output prose follows `writing:writing-standard`. Every claim cites its location in the source. Name every person on first use. Add their role if the source gives it.
 
 ## Limits
 
 - Never fills a gap with outside knowledge or a web search. A claim the source does not support stays Asserted, even if it is true.
 - Never upgrades a claim because the speaker is senior, confident or repeats it.
 - Never judges whether an Asserted claim is wrong. Asserted means unsupported, not false.
-- Never recommends a decision. Use `/dgonzo:decision-forge` or `/dgonzo:build-vs-buy` for that.
-- Never traces the cause of an incident. Use `/dgonzo:postmortem` for that.
+- Never recommends a decision. Use `dgonzo:decision-forge` or `dgonzo:build-vs-buy` for that.
+- Never traces the cause of an incident. Use `dgonzo:postmortem` for that.
 - Never edits the source.
 - Never writes the report as an HTML artifact.

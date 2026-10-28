@@ -1,6 +1,6 @@
 ---
 name: architecture-stress-test
-description: Stress-test a plan before work starts. Maps phases, dependency edges and the critical path. Runs a pre-mortem. Compares the plan with a simpler, a more parallel and a more conservative version. Returns APPROVE or REVISE. Use for "stress-test this plan", "poke holes in this migration plan", "check the phase ordering", "will this rollout hold" or "stress-test this design doc before we build". Also for /dgonzo:architecture-stress-test. Not for writing a plan (superpowers:writing-plans), reviewing code (code-review), choosing between two designs (decision-forge) or a bare pre-mortem with no plan review (lens).
+description: Stress-test a plan before work starts. Maps phases, dependency edges and the critical path. Runs a pre-mortem. Compares the plan with a simpler, a more parallel and a more conservative version. Returns APPROVE or REVISE. Use for "stress-test this plan", "poke holes in this migration plan", "check the phase ordering", "will this rollout hold" or "stress-test this design doc before we build". Also for dgonzo:architecture-stress-test. Not for writing a plan (superpowers:writing-plans), reviewing code (code-review), choosing between two designs (decision-forge) or a bare pre-mortem with no plan review (lens).
 ---
 
 # architecture-stress-test
@@ -51,7 +51,7 @@ Return REVISE if any of these holds. Otherwise return APPROVE.
 
 ## Output
 
-Write the prose to `/writing:writing-standard`. Sections in this order:
+Write the prose to `writing:writing-standard`. Sections in this order:
 
 1. Bottom line. APPROVE or REVISE and the main reason, in one sentence. Then what is blocked and who owns it. On APPROVE, write "Blocked: nothing."
 2. Required changes. REVISE only. Ranked by blast radius, each with the phase and the owner.
@@ -68,8 +68,8 @@ Use the template's skeleton for the headings and table columns.
 - Never edits the plan file. It proposes changes only.
 - Never writes a plan from scratch. That is `superpowers:writing-plans`.
 - Never reviews code line by line. That is `code-review`.
-- Never picks between two competing designs. That is `/dgonzo:decision-forge`.
-- Never runs a pre-mortem alone without the plan review. That is `/dgonzo:lens`.
+- Never picks between two competing designs. That is `dgonzo:decision-forge`.
+- Never runs a pre-mortem alone without the plan review. That is `dgonzo:lens`.
 - Never presents an inferred dependency as stated.
 - Never returns APPROVE while an ordering error is open.
 - Never delivers the assessment as an HTML artifact.

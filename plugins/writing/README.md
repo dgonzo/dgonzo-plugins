@@ -38,7 +38,7 @@ flowchart TD
 | Hook | SessionStart | prints the card into the session context in Claude |
 | Hook | PostToolUse | lints every Markdown file an agent writes and feeds findings back |
 
-The hooks run in Claude Code, in Cowork sessions on your computer and in Antigravity. Chat has no hooks, so chat relies on the skills alone.
+The hooks run in Claude Code, in Cowork sessions on your computer in Antigravity and in local Codex after hook trust review. Cloud ChatGPT relies on the skills alone.
 
 ## Tier 2: the global instruction
 
@@ -80,4 +80,4 @@ The bare model already avoids em-dashes and praise openers, and it leads with th
 
 ## Updating the rules
 
-Edit the skills here and bump `version` in `.claude-plugin/plugin.json`. Commit and push. Every surface picks up the new version on its next sync. Run the linter on the skill files before you push.
+Edit the skills here and bump `version` in `.claude-plugin/plugin.json`. Commit and push. Installed surfaces pick up the new version when their marketplace refreshes. See [INSTALL.md](../../INSTALL.md) for refresh commands. Run the linter on the skill files before you push.

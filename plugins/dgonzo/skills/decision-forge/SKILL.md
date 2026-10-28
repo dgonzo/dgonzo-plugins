@@ -1,6 +1,6 @@
 ---
 name: decision-forge
-description: Test one pending decision for confirmation bias. Attacks it, builds the strongest case for the rival option, rates confidence by dimension and prices the cost of reversing it. For architecture choices, technology bets, a vendor already chosen, headcount calls and single priority calls. Use for "pressure-test this decision", "attack this choice", "steel-man the option we rejected", "am I fooling myself on this" or "how sure should we be about X". Also for /dgonzo:decision-forge. Not for choosing build, buy or a vendor (build-vs-buy), names (naming-forge), a plan before work starts (architecture-stress-test), ranking a backlog (cut-list) or judging a candidate (hiring-debrief). Never writes the decision record. That is data-org-cowork-plugin:draft-dadr.
+description: Test one pending decision for confirmation bias. Attacks it, builds the strongest case for the rival option, rates confidence by dimension and prices the cost of reversing it. For architecture choices, technology bets, a vendor already chosen, headcount calls and single priority calls. Use for "pressure-test this decision", "attack this choice", "steel-man the option we rejected", "am I fooling myself on this" or "how sure should we be about X". Also for dgonzo:decision-forge. Not for choosing build, buy or a vendor (build-vs-buy), names (naming-forge), a plan before work starts (architecture-stress-test), ranking a backlog (cut-list) or judging a candidate (hiring-debrief). Never writes the decision record. That is data-org-cowork-plugin:draft-dadr.
 ---
 
 # decision-forge
@@ -42,7 +42,7 @@ The scales and tests for each pass are in [references/rubrics.md](references/rub
 19. Rate reversibility with the door scale in the rubric. Name the point of no return.
 20. Set the verdict with the verdict rules in the rubric. Check the rules in order.
 21. Name who owns the decision and who owns each condition. If an owner is unknown, write "owner: unassigned".
-22. Load `/writing:writing-standard` before writing the result. If it is not installed, write point first in short sentences.
+22. Load `writing:writing-standard` before writing the result. If it is not installed, write point first in short sentences.
 23. Write the result as Markdown named `decision-forge-<slug>.md`. Put it beside the source file, or else in the repo folder the user is working in.
 24. Reply with the verdict sentence and a relative link to the file.
 25. If the repo is data-org, add one line: the file can feed a DADR (data-org decision record) through `/data-org-cowork-plugin:draft-dadr`.
@@ -59,7 +59,7 @@ Sections in this order:
 6. Reversibility. The door type and the cost to reverse. Then the point of no return.
 7. Conditions. Only for hold with conditions. Each condition names an owner, a test and a done-when before the point of no return.
 
-The prose follows `/writing:writing-standard`.
+The prose follows `writing:writing-standard`.
 
 ## Limits
 

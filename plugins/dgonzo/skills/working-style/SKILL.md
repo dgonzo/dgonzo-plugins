@@ -5,7 +5,7 @@ description: How to behave in a session. Load at the start of every conversation
 
 # Working style
 
-These rules govern behaviour in a session. The prose rules for team documents are in `/writing:writing-standard`. Text sent under David's own name follows `/dgonzo:voice`. Apply the one that fits, plus these rules.
+These rules govern behaviour in a session. The prose rules for team documents are in `writing:writing-standard`. Text sent under David's own name follows `dgonzo:voice`. Apply the one that fits, plus these rules.
 
 ## Answer first
 

@@ -1,6 +1,6 @@
 ---
 name: review-prose
-description: Review the prose in a diff, a PR description or a set of changed Markdown files against the writing-standard skill. Use for "review the prose", "check the writing in this diff" or "review the PR description". Also for /writing:review-prose with no argument, a git ref or a PR number. Reports findings and proposed rewrites. Never edits.
+description: Review the prose in a diff, a PR description or a set of changed Markdown files against the writing-standard skill. Use for "review the prose", "check the writing in this diff" or "review the PR description". Also for writing:review-prose with no argument, a git ref or a PR number. Reports findings and proposed rewrites. Never edits.
 ---
 
 # review-prose
@@ -19,6 +19,8 @@ Prose files are Markdown and plain text, including Quarto and MDX. Skip code and
 
 ## Steps
 
+Resolve [writing_lint.py](../../scripts/writing_lint.py) relative to this skill file, following symlinks. Set `WRITING_LINTER` to that absolute path in the shell running the commands. If Python or file access is unavailable, report that limitation and perform only the manual review. Never claim the linter ran when it did not.
+
 1. Load the `writing-standard` skill. If the repo has `WRITING.md`, read it too.
 2. Collect the text to review:
    - no argument: `git diff --name-only` filtered to prose files. Then `git diff -- <files>`
@@ -27,15 +29,15 @@ Prose files are Markdown and plain text, including Quarto and MDX. Skip code and
 3. Run [writing_lint.py](../../scripts/writing_lint.py) and keep its output. For the no-argument and ref forms, lint the changed prose files in the working tree:
 
 ```
-python3 "${CLAUDE_PLUGIN_ROOT}/scripts/writing_lint.py" <files>
+python3 "${WRITING_LINTER}" <files>
 ```
 
    For a PR, the working tree may have another version of each file. Lint the PR's own text through stdin instead. The body first, then each changed prose file at the PR head:
 
 ```
-gh pr view <n> --json body -q .body | python3 "${CLAUDE_PLUGIN_ROOT}/scripts/writing_lint.py"
+gh pr view <n> --json body -q .body | python3 "${WRITING_LINTER}"
 git fetch -q origin "$(gh pr view <n> --json headRefName -q .headRefName)"
-git show FETCH_HEAD:<file> | python3 "${CLAUDE_PLUGIN_ROOT}/scripts/writing_lint.py"
+git show FETCH_HEAD:<file> | python3 "${WRITING_LINTER}"
 ```
 
 4. Review the added and changed lines only. Read them as a reader with no context. Check what the linter cannot:

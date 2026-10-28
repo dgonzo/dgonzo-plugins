@@ -1,6 +1,6 @@
 ---
 name: naming-forge
-description: Pick one name for a product, feature, CLI command, repo, plugin, skill or set of taxonomy categories. Argues for and against each candidate and scores the survivors on five criteria. Then it crosses the brief with an unrelated domain to find a wild card. Returns one recommended name with its scorecard. Use for "name this", "what should we call it", "is this a good name", "rename this command" or "help me name these categories". Also for /dgonzo:naming-forge. Not for variable, function or file names inside code, taglines (position-lock), word choice in prose, or decisions that are not about a name (decision-forge).
+description: Pick one name for a product, feature, CLI command, repo, plugin, skill or set of taxonomy categories. Argues for and against each candidate and scores the survivors on five criteria. Then it crosses the brief with an unrelated domain to find a wild card. Returns one recommended name with its scorecard. Use for "name this", "what should we call it", "is this a good name", "rename this command" or "help me name these categories". Also for dgonzo:naming-forge. Not for variable, function or file names inside code, taglines (position-lock), word choice in prose, or decisions that are not about a name (decision-forge).
 ---
 
 # naming-forge
@@ -51,7 +51,7 @@ Pass 2 scores five criteria. Their names and scoring anchors are in [references/
 6. Cut list. Each name cut by a constraint or in Pass 1, with the reason in one line.
 7. Checks. What you verified and what you assumed. Then what you did not check.
 
-Output prose follows `/writing:writing-standard`.
+Output prose follows `writing:writing-standard`.
 
 ## Limits
 
@@ -60,7 +60,7 @@ Output prose follows `/writing:writing-standard`.
 - Never registers a domain, package or handle.
 - Never renames files, code or manifests to apply the name.
 - Never names variables, functions or files inside code.
-- Never writes a tagline or a position. That is `/dgonzo:position-lock`.
+- Never writes a tagline or a position. That is `dgonzo:position-lock`.
 - Never takes more than 12 candidates into Pass 1.
 - Never lets a wild card win without a case against it.
 - Never writes the assessment as an HTML artifact.

@@ -1,6 +1,6 @@
 ---
 name: audience-model
-description: Model one specific reader before writing to them, such as an exec, a customer, a candidate or a team. Simulates their response to the ask, lists what is unknown about them and checks each claim against their past behaviour. Produces a reader model that /dgonzo:signal-cut, /dgonzo:position-lock and /dgonzo:exec-brief build on. Use for "who am I writing for", "model this reader", "how will the CFO read this", "what does this audience care about" or "how will this reader take the ask". Also for /dgonzo:audience-model. Not for writing the message, sorting claims from customer interviews (truth-extract) or judging whether to hire a candidate (hiring-debrief).
+description: Model one specific reader before writing to them, such as an exec, a customer, a candidate or a team. Simulates their response to the ask, lists what is unknown about them and checks each claim against their past behaviour. Produces a reader model that dgonzo:signal-cut, dgonzo:position-lock and dgonzo:exec-brief build on. Use for "who am I writing for", "model this reader", "how will the CFO read this", "what does this audience care about" or "how will this reader take the ask". Also for dgonzo:audience-model. Not for writing the message, sorting claims from customer interviews (truth-extract) or judging whether to hire a candidate (hiring-debrief).
 ---
 
 # audience-model
@@ -9,7 +9,7 @@ Produces a reader model. It says who the reader is, how they will respond to the
 
 It counters audience projection, which is assuming the reader cares about what excites the writer.
 
-The model feeds `/dgonzo:signal-cut`, `/dgonzo:position-lock` and `/dgonzo:exec-brief`. Hand them its Calibration section as input.
+The model feeds `dgonzo:signal-cut`, `dgonzo:position-lock` and `dgonzo:exec-brief`. Hand them its Calibration section as input.
 
 ## Passes
 
@@ -39,9 +39,9 @@ The model feeds `/dgonzo:signal-cut`, `/dgonzo:position-lock` and `/dgonzo:exec-
 16. If a stated preference contradicts behaviour, keep the behaviour and record the contradiction.
 17. Rerun the pass 1 prediction using only observed and stated claims.
 18. If the prediction changes, report both predictions and the claim that changed it.
-19. Load `/dgonzo:voice` for the output prose. If it is not installed, use `/writing:writing-standard` and tell David.
+19. Load `dgonzo:voice` for the output prose. If it is not installed, use `writing:writing-standard` and tell David.
 20. Write the model to `audience-<reader>.md` in the repo folder the user is working in. Use the reader's name in lower case with hyphens. Link the file.
-21. Name the next skill. Use `/dgonzo:exec-brief` for an ask to an exec. Use `/dgonzo:signal-cut` for an announcement or outward post. Use `/dgonzo:position-lock` for a one-line position.
+21. Name the next skill. Use `dgonzo:exec-brief` for an ask to an exec. Use `dgonzo:signal-cut` for an announcement or outward post. Use `dgonzo:position-lock` for a one-line position.
 
 ## Output
 

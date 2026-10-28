@@ -1,5 +1,14 @@
 # Changelog
 
+## writing 3.1.0 and dgonzo 1.2.0
+
+- Codex and ChatGPT use the same skill folders and Claude-compatible marketplace as the existing hosts.
+- Shared skill references identify the owning plugin without requiring Claude slash-command syntax.
+- Writing skills resolve the linter from the loaded skill location. Lint no longer depends on Claude argument expansion.
+- The advisory lint hook handles Codex patches with multiple files, moves and deletes. Claude and Antigravity event formats remain supported.
+- Voice accepts a neutral private sample path and keeps the existing Claude path as a fallback.
+- Installation guidance covers local OpenAI clients, Git updates, hook trust and ChatGPT workspace sync.
+
 ## dgonzo 1.1.0
 
 - `voice` has two registers. The work register covers Slack and email and is the default. It comes from David's own messages: name first, "would you" asks, named owners, numbers as receipts, `--dg` on email. The essay register keeps the Foxtrot Charlie traits.

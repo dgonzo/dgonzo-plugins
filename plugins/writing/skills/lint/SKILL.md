@@ -1,12 +1,10 @@
 ---
 name: lint
-description: Run the writing linter on one file and print its output
-argument-hint: <file>
-allowed-tools: Bash(python3:*)
+description: Run the writing linter on one file and print its output. Use when asked to lint prose or run writing:lint with a file path. Reports findings without editing.
 ---
 
-Linter output for `$ARGUMENTS`:
+Run [writing_lint.py](../../scripts/writing_lint.py) with Python 3 on the file named by the user. Resolve the script relative to this skill file, following symlinks. Quote both absolute paths when invoking the shell.
 
-!`if [ -n "$ARGUMENTS" ]; then python3 "${CLAUDE_PLUGIN_ROOT}/scripts/writing_lint.py" $ARGUMENTS; else echo "Usage: /writing:lint <file>"; fi`
+If no file was named, ask for its path. If Python or file access is unavailable, report that limitation. Never invent linter output.
 
-If the block above did not run, run [writing_lint.py](../../scripts/writing_lint.py) on the target file. Reply with the linter output verbatim. Add nothing before it and nothing after it. Do not fix anything.
+Reply with the linter output verbatim. Add nothing before it and nothing after it. Do not fix anything.

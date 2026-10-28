@@ -1,6 +1,6 @@
 ---
 name: signal-cut
-description: Draft or rework outward content for a technical audience in David's voice about something built or shipped. Builds a story from a real problem, breaks the expected shape for the format and swaps every claim for something the reader can see or run. Use for "write the launch post", "draft a blog post about this", "turn this into a LinkedIn thread", "write the demo script" or "this launch post sounds like marketing". Also for /dgonzo:signal-cut. Not for taglines or positioning (position-lock), reader research (audience-model) or exec briefs (exec-brief). Not for opinion posts or plain rewrites in David's voice (voice). Not for an internal Slack announcement (slack:draft-announcement).
+description: Draft or rework outward content for a technical audience in David's voice about something built or shipped. Builds a story from a real problem, breaks the expected shape for the format and swaps every claim for something the reader can see or run. Use for "write the launch post", "draft a blog post about this", "turn this into a LinkedIn thread", "write the demo script" or "this launch post sounds like marketing". Also for dgonzo:signal-cut. Not for taglines or positioning (position-lock), reader research (audience-model) or exec briefs (exec-brief). Not for opinion posts or plain rewrites in David's voice (voice). Not for an internal Slack announcement (slack:draft-announcement).
 ---
 
 # signal-cut
@@ -17,13 +17,13 @@ This skill produces a draft of outward content in David's voice, such as a launc
 
 ## Steps
 
-1. Load `/dgonzo:voice`. Every sentence of the draft follows it.
-2. If `/dgonzo:voice` is not installed, say so in one line and follow `/writing:writing-standard` instead.
+1. Load `dgonzo:voice`. Every sentence of the draft follows it.
+2. If `dgonzo:voice` is not installed, say so in one line and follow `writing:writing-standard` instead.
 3. Read the reference file [marketing-tells.md](references/marketing-tells.md).
 4. If the user named a source file or thread, read it.
 5. If the user named no source, ask once for the facts and the target format.
 6. If the target format is still unclear, ask once. If no answer comes, draft a blog post.
-7. If the user has an audience model from `/dgonzo:audience-model`, read it and write for that reader.
+7. If the user has an audience model from `dgonzo:audience-model`, read it and write for that reader.
 8. If the source has no real event or number, ask once for one. If none comes, list it under Open items. Never invent one.
 9. Run pass 1. Write the 3-line arc.
 10. Run pass 2. Name the default shape in one line. Name the break in a second line.
@@ -49,8 +49,8 @@ This skill produces a draft of outward content in David's voice, such as a launc
 - Never invents an event or a metric.
 - Never copies an example number from the reference file into a draft.
 - Never writes a claim the source cannot back.
-- Never writes taglines or positioning statements. Those belong to `/dgonzo:position-lock`.
-- Never builds an audience profile. That belongs to `/dgonzo:audience-model`.
-- Never writes a brief that asks an executive for a decision. That belongs to `/dgonzo:exec-brief`.
+- Never writes taglines or positioning statements. Those belong to `dgonzo:position-lock`.
+- Never builds an audience profile. That belongs to `dgonzo:audience-model`.
+- Never writes a brief that asks an executive for a decision. That belongs to `dgonzo:exec-brief`.
 - Never posts or publishes. It returns a draft.
 - Never returns an HTML artifact.

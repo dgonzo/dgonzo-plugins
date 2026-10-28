@@ -1,6 +1,6 @@
 ---
 name: hiring-debrief
-description: Turn interview notes or a scorecard for one candidate into a hire or no-hire recommendation. Every rating is tied to observed behaviour, confidence is rated per competency, and the opposite decision is argued in full. Use for "debrief this candidate", "hire or no hire", "review this candidate's interview notes", "write up the panel debrief" or "is this candidate a hire". Also for /dgonzo:hiring-debrief. Not for headcount or other general decisions (decision-forge), comparing vendors (build-vs-buy), modelling a candidate as a reader (audience-model) or user-research interviews (truth-extract).
+description: Turn interview notes or a scorecard for one candidate into a hire or no-hire recommendation. Every rating is tied to observed behaviour, confidence is rated per competency, and the opposite decision is argued in full. Use for "debrief this candidate", "hire or no hire", "review this candidate's interview notes", "write up the panel debrief" or "is this candidate a hire". Also for dgonzo:hiring-debrief. Not for headcount or other general decisions (decision-forge), comparing vendors (build-vs-buy), modelling a candidate as a reader (audience-model) or user-research interviews (truth-extract).
 ---
 
 # hiring-debrief
@@ -41,7 +41,7 @@ It counters the failure where one strong impression decides the hire.
 
 ## Output
 
-Write the debrief in these sections, in this order. The prose follows `/writing:writing-standard`.
+Write the debrief in these sections, in this order. The prose follows `writing:writing-standard`.
 
 1. Bottom line. One sentence gives hire or no-hire and the main reason. The next names what blocks the decision and who owns it. Example: "Blocked until two references reply. The hiring manager owns it."
 2. Evidence table with the header `Competency | Interviewer | Rating | Behaviour`. One row per rating. An unsupported rating shows "No evidence" as its behaviour.
@@ -59,6 +59,6 @@ Write the debrief in these sections, in this order. The prose follows `/writing:
 - Never invent a quote. If the notes paraphrase, write "described as" instead of quotation marks.
 - Never fill a missing rating. Report it missing.
 - Never debrief more than one candidate per run. Ranking candidates against each other is out of scope.
-- Never decide headcount or whether to open a role. That is `/dgonzo:decision-forge`.
+- Never decide headcount or whether to open a role. That is `dgonzo:decision-forge`.
 - Never send the debrief to anyone or post it anywhere.
 - The recommendation advises the panel. It does not make the decision.

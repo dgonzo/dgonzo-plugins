@@ -1,6 +1,6 @@
 ---
 name: cut-list
-description: Force-rank a backlog, roadmap, quarter plan or list of asks against one stated goal. Then split it into keep, defer and cut, with each cut marked BLACK and a line to send. Use for "everything is P0", "what do we cut", "too many priorities", "rank this backlog" or "trim the quarter plan". Also for /dgonzo:cut-list. Not for one decision between options (decision-forge), status reports (ragb), vendor choices (build-vs-buy) or adding and completing tasks in TASKS.md (productivity:task-management).
+description: Force-rank a backlog, roadmap, quarter plan or list of asks against one stated goal. Then split it into keep, defer and cut, with each cut marked BLACK and a line to send. Use for "everything is P0", "what do we cut", "too many priorities", "rank this backlog" or "trim the quarter plan". Also for dgonzo:cut-list. Not for one decision between options (decision-forge), status reports (ragb), vendor choices (build-vs-buy) or adding and completing tasks in TASKS.md (productivity:task-management).
 ---
 
 # cut-list
@@ -9,7 +9,7 @@ Produces an evidence-backed keep list and defer list plus a cut list marked BLAC
 
 It counters the failure mode where everything is top priority, so nothing is.
 
-BLACK means stopped on purpose, as in `/dgonzo:ragb`. A BLACK item gets no work this period.
+BLACK means stopped on purpose, as in `dgonzo:ragb`. A BLACK item gets no work this period.
 
 ## Passes
 
@@ -56,7 +56,7 @@ BLACK means stopped on purpose, as in `/dgonzo:ragb`. A BLACK item gets no work 
 5. Where the rank could be wrong: the 2 strongest reasons and the evidence that would flip each.
 6. Assumptions: capacity and goal wording. Then the inherited reasons struck in pass 3 and every piece of evidence tagged assumed.
 
-Prose in the output follows `/writing:writing-standard`.
+Prose in the output follows `writing:writing-standard`.
 
 ## Limits
 
@@ -66,7 +66,7 @@ Prose in the output follows `/writing:writing-standard`.
 - Never defers an item without a trigger. A defer with no trigger is a cut.
 - Never quietly defers an item that scores 3. It is a conflict with an owner.
 - Never invents evidence or owners. Unknown value is tagged assumed.
-- Never chooses between options for one decision. That is `/dgonzo:decision-forge`.
-- Never reports status. That is `/dgonzo:ragb`.
+- Never chooses between options for one decision. That is `dgonzo:decision-forge`.
+- Never reports status. That is `dgonzo:ragb`.
 - Never sends the cut lines. The owner sends them.
 - Never writes the result as an HTML artifact.
