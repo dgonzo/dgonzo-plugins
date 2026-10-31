@@ -1,5 +1,11 @@
 # Changelog
 
+## writing 3.1.1
+
+- The BLUF is one to three sentences and covers reports, notebooks and PR descriptions as well as documents and replies.
+- A piece with no blocker says "Blocked: none". The writing card carries the same rule.
+- Folds in the BLUF detail from the retired data-org `standards/writing.md` branch of 2026-10-12. The other rules on that branch were already here or in `dgonzo:working-style`.
+
 ## writing 3.1.0 and dgonzo 1.2.0
 
 - Codex and ChatGPT use the same skill folders and Claude-compatible marketplace as the existing hosts.

@@ -17,7 +17,7 @@ This standard governs every piece of prose you produce, from a chat reply to a p
 
 The first sentence answers the question or states the finding.
 
-Every document and reply opens with the bottom line up front (BLUF). The finding first. Then what is blocked and who owns it. Blocked is part of the BLUF, never the last section. No exceptions.
+Every document, report, notebook, PR description and reply opens with the bottom line up front (BLUF). The BLUF is one to three sentences. The finding first. Then what is blocked and who owns it. Blocked is part of the BLUF, never the last section. A piece with no blocker says "Blocked: none". No exceptions.
 
 Evidence, caveats and reasoning come after. Never before.
 
