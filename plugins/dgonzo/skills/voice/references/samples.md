@@ -218,6 +218,26 @@ Thank you each for how you've worked to get us moving in a good direction.
 --dg
 ```
 
+### 17. Rewrite direction
+
+Three rewrites David made on one slide line, in order. Each is shorter, has a plainer noun and puts "we" first.
+
+| Rejected | He wrote |
+|---|---|
+| A zero target is a wrong-value target. | At 100% we publish wrong values. |
+| At 100% we publish wrong values. | At 0% human we publish mistakes. |
+| One number is yours. | You set one target. |
+
+### 18. The honest number
+
+```text
+<Thing> is our single most impressive and comprehensive moat. Working with it has challenges.
+
+We compared your <items> with ours and got almost <n>% coverage, which we're ok with, we have avenues to fill the remainder.
+```
+
+The number, then how he feels about it in four words, then what covers the gap.
+
 ## Add samples here
 
 David: add verbatim messages to `~/.claude/dgonzo/voice-samples.md`. Add a pattern here with names and figures replaced by placeholders.

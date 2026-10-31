@@ -18,6 +18,8 @@ Before you send:
 10. Does every ID, person and initialism have its plain name on first use?
 11. Any metaphor, personification or narrative voice? Any idiom? Replace it with the fact.
 12. Remove one word at a time. If the meaning survives, it was wrong.
+13. Hunt the passives. "is decided", "are marked", "is named". Put the actor first.
+14. Does every measurement in a table carry its target and a verdict word?
 
 | Banned | Write instead |
 |---|---|

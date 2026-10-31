@@ -174,6 +174,12 @@ Node labels are two to five words. Never a sentence.
 
 Ten nodes maximum. Past that, split it into two diagrams.
 
+### A measurement shows its target
+
+A table that shows a measurement shows its target beside it and a verdict word. Passes, fails or unmeasured. A number the reader cannot judge is decoration.
+
+A stakeholder's words appear whole. Never shorten a mandate into a label.
+
 One direction per diagram, declared once at the top.
 
 Label every edge with a verb. An unlabelled arrow hides the relationship.
@@ -348,6 +354,8 @@ Run this on every message and every document. It is not optional. The user will 
 10. Does every ID, person and initialism have its plain name on first use?
 11. Any metaphor, personification or narrative voice? Any idiom? Replace it with the fact.
 12. Remove one word at a time. If the meaning survives, it was wrong.
+13. Hunt the passives: "is decided", "are marked", "is named", "is written", "is measured", "are recorded". Put the actor first.
+14. Does every measurement in a table carry its target and a verdict word?
 
 Resolve the linter relative to this skill file, following symlinks. Set `WRITING_LINTER` to that absolute path before running the command. If Python or file access is unavailable, use the manual check and state that automated lint was unavailable.
 

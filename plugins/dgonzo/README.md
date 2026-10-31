@@ -15,6 +15,9 @@ Codex, ChatGPT, Cowork and older Claude Code versions are in [INSTALL.md](../../
 | Team documents, repo docs, PR descriptions in team repos | `/writing:writing-standard` |
 | Anything sent under David's name: Slack, email, LinkedIn, essays | `/dgonzo:voice` |
 | A brief to an executive | `/dgonzo:exec-brief`, house structure in David's voice |
+| Anything Peter will read | `/dgonzo:pmc-id`, after the draft exists |
+
+Reader files for real people live at `~/.claude/dgonzo/readers/<name>.md`. They never enter this repo or a team repo.
 
 ## Skills
 
@@ -26,6 +29,7 @@ Codex, ChatGPT, Cowork and older Claude Code versions are in [INSTALL.md](../../
 | Voice | `position-lock` | taglines, pitches and positioning |
 | Voice | `audience-model` | model one reader before writing to them |
 | Voice | `exec-brief` | a one-page ask for an executive |
+| Voice | `pmc-id` | get any artifact in shape for Peter, the CEO, from his private reader file |
 | Judgment | `lens` | run any of the gwrk reasoning modes on a doc or decision |
 | Judgment | `decision-forge` | attack, steel-man and calibrate a decision |
 | Judgment | `truth-extract` | sort claims into grounded, inferred and asserted |

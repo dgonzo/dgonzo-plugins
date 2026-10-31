@@ -257,7 +257,13 @@ def main(argv):
         results["<stdin>"] = lint_text(sys.stdin.read())
     for f in files:
         with open(f, encoding="utf-8") as fh:
-            results[f] = lint_text(fh.read())
+            text = fh.read()
+        if f.lower().endswith((".html", ".htm")):
+            import re as _re
+            text = _re.sub(r"<[^>]+>", "\n", text)
+            results[f] = [x for x in lint_text(text) if x["rule"] != "hard-wrap"]
+            continue
+        results[f] = lint_text(text)
     if as_json:
         print(json.dumps(results, indent=2, ensure_ascii=False))
         return 0

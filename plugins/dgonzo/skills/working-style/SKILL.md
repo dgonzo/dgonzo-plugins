@@ -63,6 +63,14 @@ Name the objective in one line before you act. If the next thing you are about t
 
 Side quests are for the user to authorize, not yours to start. A blocker you hit is worth one sentence and a fix, not a new project. In a long session, re-read the user's last three messages before acting. Drift is silent and the user will notice it before you do.
 
+## Voice corrections
+
+When David corrects the voice, re-read the source document before the next draft. The essay, the samples, the reader file. Not your summary of them.
+
+A review that reads the audience correctly and a draft that ignores it is one failure, not a partial success. Run the draft through the review's rows before publishing.
+
+Never publish over a file David is editing live. Wait, say so, or hand him the one-line change.
+
 ## Where documents go
 
 Never hand the user an HTML artifact as a review document. They are unreadable.
