@@ -1,10 +1,10 @@
-# Voice gaps and the pmc-id skill
+# Voice gaps and the pmc-it skill
 
 Written after the canon charter deck. The review of that deck read Peter correctly. The deck built against the review failed five times on voice and twice on design. This document says why the skills let that happen. It states David's voice in a form a skill can enforce. It lists the changes for this repo and for data-org.
 
 ## Bottom line
 
-The skills describe the voice. Nothing forces a draft through it. `voice` has a traits table and a self-check. It has no per-sentence gate and no ban list for the failure modes the deck showed. It has no channel for a deck. `audience-model` writes a reader file that no other skill reads. `exec-brief` translates jargon the exec would look up and lets internal coinages through. The fix is one private readers folder and one generation gate in `voice`. Then one new skill, `pmc-id`, and four small edits elsewhere. Nothing is blocked. David owns the merge.
+The skills describe the voice. Nothing forces a draft through it. `voice` has a traits table and a self-check. It has no per-sentence gate and no ban list for the failure modes the deck showed. It has no channel for a deck. `audience-model` writes a reader file that no other skill reads. `exec-brief` translates jargon the exec would look up and lets internal coinages through. The fix is one private readers folder and one generation gate in `voice`. Then one new skill, `pmc-it`, and four small edits elsewhere. Nothing is blocked. David owns the merge.
 
 ## What David's voice is
 
@@ -94,7 +94,7 @@ The fix is a gate, not more description. A gate is a list the draft must pass, r
 2. "Never publish over a file David is editing live. Wait, say so, or hand him the one-line change."
 3. "A review that reads the audience correctly and a draft that ignores it is one failure, not a partial success."
 
-### New skill: pmc-id
+### New skill: pmc-it
 
 Get a thing in shape for Peter. The name is his initials. The skill is a gate over any artifact, a deck, a doc, an email or a Slack message, that makes it read the way he reads.
 
@@ -102,11 +102,11 @@ Draft SKILL.md:
 
 ```markdown
 ---
-name: pmc-id
-description: Get any artifact in shape for Peter Castleman, CEO, before he sees it. A deck, a memo, an email or a Slack message. Leads with the one decision that is his, uses his own words whole, gives every number its target and a verdict, and strips everything he calls noise. Use for "get this ready for Peter", "pmc this", "will this land with Peter" or /dgonzo:pmc-id. Not for modelling him (audience-model) or for a generic exec (exec-brief).
+name: pmc-it
+description: Get any artifact in shape for Peter Castleman, CEO, before he sees it. A deck, a memo, an email or a Slack message. Leads with the one decision that is his, uses his own words whole, gives every number its target and a verdict, and strips everything he calls noise. Use for "get this ready for Peter", "pmc this", "will this land with Peter" or /dgonzo:pmc-it. Not for modelling him (audience-model) or for a generic exec (exec-brief).
 ---
 
-# pmc-id
+# pmc-it
 
 Produces a Peter-ready version of an artifact and predicts his reply. It counters the deck or memo that is organised by our structure instead of his.
 
@@ -172,5 +172,5 @@ Ten lines David wrote. Ten lines a skill wrote in his voice. Shuffle. He marks e
 ## Order
 
 1. Merge the reader file and the voice gate. One day.
-2. Add `pmc-id`. Run it on the charter deck as the first test.
+2. Add `pmc-it`. Run it on the charter deck as the first test.
 3. Then the writing rule 7 and the data-org standard, as one PR each.
