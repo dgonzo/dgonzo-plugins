@@ -1,9 +1,9 @@
 ---
-name: pmc-id
-description: Get any artifact in shape for Peter Castleman, CEO, before he sees it. A deck, a memo, an email or a Slack message. Leads with the one decision that is his, uses his own words whole, gives every number its target and a verdict, and strips everything he calls noise. Use for "get this ready for Peter", "pmc this", "will this land with Peter" or /dgonzo:pmc-id. Not for modelling him (audience-model) or for a generic executive (exec-brief).
+name: pmc-it
+description: Get any artifact in shape for Peter Castleman, CEO, before he sees it. A deck, a memo, an email or a Slack message. Leads with the one decision that is his, uses his own words whole, gives every number its target and a verdict, and strips everything he calls noise. Use for "get this ready for Peter", "pmc this", "will this land with Peter" or /dgonzo:pmc-it. Not for modelling him (audience-model) or for a generic executive (exec-brief).
 ---
 
-# pmc-id
+# pmc-it
 
 Produces a Peter-ready version of an artifact and predicts his reply. It counters the deck or memo organised by our structure instead of his.
 
