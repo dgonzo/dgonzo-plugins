@@ -261,6 +261,8 @@ def main(argv):
         if f.lower().endswith((".html", ".htm")):
             import re as _re
             text = _re.sub(r"<[^>]+>", "\n", text)
+            results[f] = [x for x in lint_text(text) if x["rule"] != "hard-wrap"]
+            continue
         results[f] = lint_text(text)
     if as_json:
         print(json.dumps(results, indent=2, ensure_ascii=False))
