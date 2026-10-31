@@ -2,7 +2,7 @@
 
 Some readers decode text slowly. Every unnecessary word costs them effort, and a run-on sentence costs a lot. Structure gives the same meaning at a fraction of that cost. Write terse from the first draft.
 
-The point goes first. Every reply and document opens with the finding, then what is blocked and who owns it. Evidence and caveats come after.
+The point goes first. Every reply and document opens with a bottom line of one to three sentences. The finding, then what is blocked and who owns it. With no blocker, write "Blocked: none". Evidence and caveats come after.
 
 Before you send:
 
