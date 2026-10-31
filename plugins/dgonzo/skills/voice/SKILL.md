@@ -7,6 +7,8 @@ description: Draft or rewrite text in David's own professional voice for anythin
 
 This skill produces a draft that reads as David wrote it, ready for him to send under his name. It counters the generic voice: correct, polite prose that no reader would attribute to him.
 
+David's voice is technically accurate and emotionally honest. Three ingredients carry it. Precision is the exact number, name or noun, never a category word. Honesty is the state as it is, the bad included, and how he feels about it in a few plain words. Ownership is who does the next thing, by name. The edge comes from the fact, never from the adjective.
+
 David writes in two registers. The work register covers Slack and email, and it is the default. The essay register covers LinkedIn opinion posts and essays. Pick the register before drafting.
 
 Read [references/samples.md](references/samples.md) before every draft. If `~/.config/dgonzo/voice-samples.md` is accessible, read it too. Otherwise use `~/.claude/dgonzo/voice-samples.md` when accessible. In a remote chat, use a private reference supplied by David if available. Do not assume access to files on his machine. Keep verbatim private messages out of this public repo.
@@ -42,6 +44,18 @@ A long email that reasons out loud does not land with executives. A structured a
 | Work-safe edge | A euphemism or a mild word, never strong profanity | 7 |
 | Invariants | Numbered rule, then a one-line consequence | 8 |
 | Verdict close | End on a short line that judges, not a summary | 10 |
+
+## What the voice is not
+
+Five ways a draft misses while sounding strong. Each has a test.
+
+| Miss | What it looks like | Test |
+|---|---|---|
+| Theatrical | Force from the adjective or the imperative. "Hunt down the uncomfortable truth" | Delete the adjective. If the sentence loses its force, it had none |
+| Corporate | An abstract noun in place of the thing. "Operational contract", "architectural principle" | Point at it. A contract is a file. Name the file |
+| Cute | Force from rhythm or word order. "Three conditions. Three legs. One owner each." | Rewrite as one plain sentence. If nothing is lost, it was rhythm |
+| Coy | The noun withheld for effect. "One number is yours" | Put the noun in the first clause |
+| Coined | An internal term standing in for a plain fact. "Envelope", "stubbed", "wrong-value target" | Could the reader say it back in their next email? If not, it is ours, not theirs |
 
 ## Both registers avoid
 
@@ -82,11 +96,13 @@ The work register departs only in small ways. It allows greetings and sign-offs.
 | Email asking approval | Work | Labelled sections, ask first | One screen |
 | LinkedIn | Essay | Claim, story, verdict | Under 250 words |
 | Essay | Essay | Thesis, story, rules, close | As long as the argument |
+| Presentation to a decider | Work | The decision first, the reader's own words as headings, tables with a status column, an appendix for the room | Seven slides for the decider |
 
 ## Steps
 
-1. Read the sample files named above.
+1. Read the sample files named above. For the essay register or a presentation, read the full essay at `~/Projects/MyTools/gwrk/docs/product/FOXTROT-CHARLIE.md` as well. The excerpts give rhythm. The essay gives posture.
 2. If the text is a team document, stop and apply `writing:writing-standard` instead.
+3. If the reader has a file at `~/.claude/dgonzo/readers/<name>.md`, read it. Cite its rows when you check the draft.
 3. If the user named a source to rewrite or reply to, read it first.
 4. If the channel or the reader or the point is missing, ask once. Put all gaps in one message.
 5. Pick the register and the channel row.
@@ -97,6 +113,19 @@ The work register departs only in small ways. It allows greetings and sign-offs.
 10. Run the self-check and fix every miss.
 11. If the text is a message, return it in a fenced block ready to paste.
 12. If the text is a document David keeps, write it as Markdown in his working repo folder. Link it.
+
+### The gate
+
+Run on every sentence before output. A sentence that fails a row gets rewritten, not excused.
+
+| Gate | Pass when |
+|---|---|
+| Subject | "We", "I" or a named person is the subject. No passive |
+| Noun | A number, a name or a concrete noun is in the sentence |
+| State | It says what is, the bad included, in plain words |
+| Owner | If it describes a next step, it names who |
+| Repeat | The reader could say it back verbatim in their next email |
+| Whole | A reader's own words appear whole. A mandate is never shortened into shorthand |
 
 ### Self-check
 
@@ -118,6 +147,8 @@ The work register departs only in small ways. It allows greetings and sign-offs.
 - Never invent a story or a role.
 - Never invent a name or a number.
 - Never copy sample text or sample facts into new text.
+- Never shorten a reader's own words into shorthand.
+- Never carry a reader file, or a quote from a reader's email, into a team repo or this plugin.
 - Never put profanity in external or customer text.
 - Never send the text. Return the draft.
 - Never copy text from the private samples file into this repo.

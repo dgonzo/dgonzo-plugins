@@ -1,7 +1,7 @@
 {
   "name": "writing",
   "displayName": "Writing",
-  "version": "3.1.1",
+  "version": "3.2.0",
   "description": "House writing standard, readability review, prose review and lint. Four shared skills, a writing card, and advisory lint hooks for Claude, Antigravity and Codex. Project overrides live in WRITING.md.",
   "author": {
     "name": "David Gonzalez",

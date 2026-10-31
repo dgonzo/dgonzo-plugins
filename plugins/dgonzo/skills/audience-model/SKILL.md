@@ -40,7 +40,7 @@ The model feeds `dgonzo:signal-cut`, `dgonzo:position-lock` and `dgonzo:exec-bri
 17. Rerun the pass 1 prediction using only observed and stated claims.
 18. If the prediction changes, report both predictions and the claim that changed it.
 19. Load `dgonzo:voice` for the output prose. If it is not installed, use `writing:writing-standard` and tell David.
-20. Write the model to `audience-<reader>.md` in the repo folder the user is working in. Use the reader's name in lower case with hyphens. Link the file.
+20. Write the model to `~/.claude/dgonzo/readers/<name>.md` when the reader is a real person. Use the reader's first name in lower case. Write to the repo folder only when David asks, and never to a team repo. A real person's reading habits and quoted email stay on David's machine. Link the file.
 21. Name the next skill. Use `dgonzo:exec-brief` for an ask to an exec. Use `dgonzo:signal-cut` for an announcement or outward post. Use `dgonzo:position-lock` for a one-line position.
 
 ## Output
@@ -71,6 +71,10 @@ The file has these sections, in this order. For a group, repeat sections 2 to 7 
    - words to avoid
    - length
    - channel
+   - repeat test: one sentence the reader would say back verbatim
+8. Their vocabulary. A table of the reader's own terms and what each means. Drafts use these.
+9. What loses them. A table of signals that make the reader stop reading, each tied to a record.
+10. What they do with the thing you send. Forward, assign, reply with actions, file. Write so that act needs no cover note.
 
 ## Limits
 

@@ -90,6 +90,22 @@ Thank you,
 --dg
 ```
 
+## Deck
+
+Seven slides for the exec. Everything else is an appendix the presenters turn to when asked. No decision IDs, tool names or internal coinages on the seven.
+
+| Slide | Holds |
+|---|---|
+| 1 | The exec's own phrase for the destination, verbatim |
+| 2 | The commitment in one sentence with its date. The one ask. Why now in two facts |
+| 3 | The exec's own conditions as headings, whole. Under each, the measures with today, target and a verdict word |
+| 4 | The fact that makes it the exec's problem, drawn from their own documents |
+| 5 | One owner per thing, what each decided, what each still owes |
+| 6 | One row per person in the room, what they decide, by when |
+| 7 | The verdict and the date |
+
+Every number carries its target and a verdict word in colour. Tables, never card grids. A headline is a claim or a number, never a description of the slide.
+
 ## Pass 3 check
 
 Read only the title and the first two lines as the exec. Answer these three questions.

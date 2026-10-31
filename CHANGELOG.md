@@ -1,5 +1,14 @@
 # Changelog
 
+## dgonzo 1.3.0 and writing 3.2.0
+
+- `voice` states the voice in one line: technically accurate and emotionally honest. Precision, honesty, ownership. It names five misses that sound strong, theatrical, corporate, cute, coy and coined, each with a test. It adds a six-row gate run on every sentence. It adds a presentation channel. The essay register and any presentation read the full Foxtrot Charlie essay first.
+- New skill `pmc-id`. Gets any artifact in shape for Peter from his private reader file. Reductive, Modeling and Translator passes.
+- `audience-model` writes real people to `~/.claude/dgonzo/readers/<name>.md`, never a repo. It adds the reader's vocabulary, what loses them and what they do with the thing you send.
+- `exec-brief` reads the reader file, cuts internal coinages as well as jargon, predicts the first question from the reader's behaviour, and has a seven-slide deck shape. No placeholder dates.
+- `working-style` adds voice corrections: re-read the source, run the draft through the review's rows, never publish over a live edit.
+- writing Rule 7: a measurement shows its target and a verdict word. A stakeholder's words appear whole. The check before you send hunts passives and checks measurements. The linter lints the text of `.html` slide files.
+
 ## writing 3.1.1
 
 - The BLUF is one to three sentences and covers reports, notebooks and PR descriptions as well as documents and replies.
