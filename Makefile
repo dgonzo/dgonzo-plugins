@@ -18,6 +18,7 @@ lint:
 validate:
 	agy plugin validate plugins/dgonzo
 	agy plugin validate plugins/writing
+	agy plugin validate plugins/code-review
 
 test:
 	python3 -m unittest discover -s tests -v

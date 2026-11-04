@@ -1,6 +1,6 @@
 {
   "name": "dgonzo",
-  "description": "Personal and writing skills by David Gonzalez for Claude, Antigravity, Codex and ChatGPT.",
+  "description": "Personal, writing and code review skills by David Gonzalez for Claude, Antigravity, Codex and ChatGPT.",
   "owner": {
     "name": "David Gonzalez",
     "url": "https://github.com/dgonzo"
@@ -10,7 +10,7 @@
       "name": "dgonzo",
       "displayName": "dgonzo",
       "source": "./plugins/dgonzo",
-      "description": "David Gonzalez's 17 personal skills: working style, voice, reasoning, judgment and leadership. Shared across Claude, Antigravity, Codex and ChatGPT.",
+      "description": "David Gonzalez's 18 personal skills: working style, voice, reasoning, judgment and leadership. Shared across Claude, Antigravity, Codex and ChatGPT.",
       "author": {
         "name": "David Gonzalez",
         "url": "https://github.com/dgonzo"
@@ -40,6 +40,27 @@
         "style",
         "readability",
         "lint"
+      ]
+    },
+    {
+      "name": "code-review",
+      "displayName": "Code Review",
+      "source": "./plugins/code-review",
+      "description": "Principal Engineer code review router and specialist skills for fullstack webapps, APIs and data science (insights vs modeling). Built on gwrk review mechanics.",
+      "author": {
+        "name": "David Gonzalez",
+        "url": "https://github.com/dgonzo"
+      },
+      "homepage": "https://github.com/dgonzo/dgonzo-plugins/tree/main/plugins/code-review",
+      "category": "development",
+      "tags": [
+        "code-review",
+        "architecture",
+        "clean-architecture",
+        "hexagonal",
+        "mvvm",
+        "rest-api",
+        "data-science"
       ]
     }
   ]
