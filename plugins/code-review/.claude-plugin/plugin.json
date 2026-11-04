@@ -1,0 +1,22 @@
+{
+  "name": "code-review",
+  "displayName": "Code Review",
+  "version": "1.0.0",
+  "description": "Principal Engineer code review router and specialist skills for fullstack webapps, APIs and data science (insights vs modeling). Built on gwrk review mechanics.",
+  "author": {
+    "name": "David Gonzalez",
+    "url": "https://github.com/dgonzo"
+  },
+  "homepage": "https://github.com/dgonzo/dgonzo-plugins/tree/main/plugins/code-review",
+  "repository": "https://github.com/dgonzo/dgonzo-plugins",
+  "license": "UNLICENSED",
+  "keywords": [
+    "code-review",
+    "architecture",
+    "clean-architecture",
+    "hexagonal",
+    "mvvm",
+    "rest-api",
+    "data-science"
+  ]
+}

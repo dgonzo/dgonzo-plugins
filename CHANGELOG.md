@@ -1,5 +1,14 @@
 # Changelog
 
+## code-review 1.0.0 and dgonzo 1.4.0
+
+- First release of the `code-review` plugin. Install ID `code-review@dgonzo`.
+- `code-review` classifies changed files, runs the mechanical baseline under one-way gate authority and dispatches specialist skills. It returns `GO` or `NO-GO` with `WHERE` remediation blocks and gate coverage holes.
+- `review-webapp` checks Clean and Hexagonal boundaries, plus Model-View-ViewModel (MVVM) and Vertical Slice rules in fullstack webapps. It is framework-agnostic and checks all four UI async states.
+- `review-api` checks Clean, Hexagonal and REST resource rules across bounded contexts. It is language-agnostic and checks boundary schemas and error envelopes, plus idempotency and four-class route tests.
+- `review-data-science` is opinionated and separates Insights code from Modeling and Predictions code. Insights checks join cardinality and row-count assertions, while Modeling checks split-before-fit leakage and train-serve parity.
+- `dgonzo:architecture-stress-test` points to `code-review:code-review` for line-by-line code review.
+
 ## dgonzo 1.3.0 and writing 3.2.0
 
 - `voice` states the voice in one line: technically accurate and emotionally honest. Precision, honesty, ownership. It names five misses that sound strong, theatrical, corporate, cute, coy and coined, each with a test. It adds a six-row gate run on every sentence. It adds a presentation channel. The essay register and any presentation read the full Foxtrot Charlie essay first.

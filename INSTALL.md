@@ -15,7 +15,7 @@
 1. Open Customize, then Plugins.
 2. Select Add, then Add marketplace.
 3. Enter `dgonzo/dgonzo-plugins` and select Sync.
-4. Find dgonzo and Writing under Discover and select Add on each.
+4. Find dgonzo, Writing and Code Review under Discover and select Add on each.
 5. Turn on Sync automatically so new versions arrive on their own.
 
 ## Claude Code
@@ -25,6 +25,7 @@ Run this in a terminal:
 ```
 claude plugin install dgonzo --marketplace dgonzo/dgonzo-plugins
 claude plugin install writing --marketplace dgonzo/dgonzo-plugins
+claude plugin install code-review --marketplace dgonzo/dgonzo-plugins
 ```
 
 Inside a session, type the same as a slash command:
@@ -39,6 +40,7 @@ Both need Claude Code 2.1.275 or later. On an older version, add the marketplace
 claude plugin marketplace add dgonzo/dgonzo-plugins
 claude plugin install dgonzo@dgonzo
 claude plugin install writing@dgonzo
+claude plugin install code-review@dgonzo
 ```
 
 ## Antigravity
@@ -58,6 +60,7 @@ To copy the plugins into `~/.gemini/config/plugins/` with the CLI instead, run:
 ```
 agy plugin install ./plugins/dgonzo
 agy plugin install ./plugins/writing
+agy plugin install ./plugins/code-review
 ```
 
 For a single project repo, add `.agents/plugins.json` at the repo root with the `entries` block above.
@@ -114,9 +117,10 @@ Install from the tracked GitHub branch so future releases come from the same rep
 codex plugin marketplace add dgonzo/dgonzo-plugins --ref main
 codex plugin add dgonzo@dgonzo
 codex plugin add writing@dgonzo
+codex plugin add code-review@dgonzo
 ```
 
-These commands require a Codex CLI with `plugin add` support. The installation was checked with `0.165.0-alpha.1.2`. Both plugins use the existing Claude-compatible marketplace and shared skill folders. No OpenAI-specific skill copies are maintained.
+These commands require a Codex CLI with `plugin add` support. The installation was checked with `0.165.0-alpha.1.2`. All three plugins use the existing Claude-compatible marketplace and shared skill folders. No OpenAI-specific skill copies are maintained.
 
 Start a new chat in the desktop app or a new CLI session. If the desktop directory has not refreshed, restart the app. In the CLI, use `/skills` or `$` to select a skill. In ChatGPT, use `@` to select the installed plugin or skill. References such as `dgonzo:voice` inside a skill identify its owner and name. Use the host's selector to invoke it.
 
@@ -138,6 +142,7 @@ To request an update explicitly:
 codex plugin marketplace upgrade dgonzo
 codex plugin add dgonzo@dgonzo
 codex plugin add writing@dgonzo
+codex plugin add code-review@dgonzo
 ```
 
 Start a fresh session after updating. Version bumps identify new releases, but do not guarantee that every host refreshes at the same time. Installed plugin caches are generated copies. Never edit them.
