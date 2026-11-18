@@ -140,7 +140,7 @@ Foxtrot Charlie scales by **compressing decision latency**, not by managing cons
 
 ## Work register patterns
 
-These come from David's Slack and email between August and October 2026. Names and figures are replaced with placeholders. The verbatim messages are in `~/.claude/dgonzo/voice-samples.md` on David's machine only.
+These come from David's Slack and email between August and November 2026. Names and figures are replaced with placeholders. The verbatim messages are in `~/.claude/dgonzo/voice-samples.md` on David's machine only.
 
 ### 11. One-line Slack asks
 
@@ -237,6 +237,20 @@ We compared your <items> with ours and got almost <n>% coverage, which we're ok 
 ```
 
 The number, then how he feels about it in four words, then what covers the gap.
+
+### 19. Team discussion post
+
+From one post in November 2026. David kept most of a model draft and made these changes.
+
+| Rejected | He wrote |
+|---|---|
+| We've been using <one word for two things>. | I think there may be <issue>. |
+| the answer changes how we read <number> | the answer must be aligned for <scope> |
+| <Name>, which <items> count <x> and which count <y>? | <context>. We should make sure <outcome>. Would you work with folks here to determine <detail>. |
+| <Name>, is that the right done for <team>? | is <thing> the right done for <team>? |
+| Everyone else, tell me where this is wrong. | Deleted |
+| No closing line | Please reply in thread to keep the main channel <reason>. |
+| `*1. <heading>*` | `_1. <heading>_` |
 
 ## Add samples here
 

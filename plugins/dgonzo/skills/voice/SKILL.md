@@ -11,7 +11,7 @@ David's voice is technically accurate and emotionally honest. Three ingredients 
 
 David writes in two registers. The work register covers Slack and email, and it is the default. The essay register covers LinkedIn opinion posts and essays. Pick the register before drafting.
 
-Read [references/samples.md](references/samples.md) before every draft. If `~/.config/dgonzo/voice-samples.md` is accessible, read it too. Otherwise use `~/.claude/dgonzo/voice-samples.md` when accessible. In a remote chat, use a private reference supplied by David if available. Do not assume access to files on his machine. Keep verbatim private messages out of this public repo.
+Read [references/samples.md](references/samples.md) before every draft. If `~/.config/dgonzo/voice-samples.md` is accessible, read it too. Otherwise use `~/.claude/dgonzo/voice-samples.md` when accessible. In a remote chat, use a private reference supplied by David if available. Do not assume access to files on his machine. Open the private file with a file read, never a shell test. A check that prints nothing does not prove the file is absent. Keep verbatim private messages out of this public repo.
 
 ## Work register
 
@@ -25,9 +25,27 @@ Read [references/samples.md](references/samples.md) before every draft. If `~/.c
 | Plain warmth | One short line of thanks, no gushing | "Really appreciate it." |
 | One real question | End on the single question that unblocks him | "Is there anything I can do from my end?" |
 | Sign-off | `--dg` on email, none on Slack | `--dg` |
+| Proposal on an open question | Open with "I think" when the team has not settled it | "I think there may be <issue>." |
+| Position, then delegate | In an ask to a lead, say what he wants true, then ask them to work it out | "We should make sure <outcome>. <Name>, would you work with folks here to determine <detail>." |
+| Thing named in the ask | Repeat the noun in place of "that" | "is <thing> the right done for <team>?" |
 | Structure for big asks | Ask, amount and deadline first, then capitalised labels | `WHAT`, `WHY`, `WHEN`, `COST`, `ASK` |
 
 Slack may be lowercase and casual in a one-line DM. Never add typos. One Slack emoji code is fine in a warm internal message, such as `:slightly_smiling_face:`.
+
+### Opening a team discussion
+
+David opens a question for the team to work out. He does not announce a verdict. A flat verdict on an open question reads as the decision already made.
+
+| Miss | Do not write | Write |
+|---|---|---|
+| Verdict on the team | "We've been using <wrong thing>." | "I think there may be <issue>." |
+| Consequence framed for effect | "The answer changes how we read <number>." | "The answer must be aligned for <scope>." |
+| Quiz question to a lead | "<Name>, which <items> count <x>?" | "We should make sure <outcome>. Would you work with folks here to determine <detail>." |
+| Challenge to the room | "Everyone else, tell me where this is wrong." | No line |
+
+Close a channel post with a thread request and its reason. "Please reply in thread to keep the main channel easier to work in."
+
+In-message headings on Slack are numbered and italic, as in `_1. <heading>_`. Never bold.
 
 A long email that reasons out loud does not land with executives. A structured ask with the decision in the first line gets a fast yes. For an exec, use `dgonzo:exec-brief`.
 
@@ -59,7 +77,7 @@ Five ways a draft misses while sounding strong. Each has a test.
 
 ## Both registers avoid
 
-- Hedges and consensus language.
+- Hedges on a claim or a status, and consensus language. "I think" on a question still open with the team is a proposal, not a hedge.
 - Motivational filler.
 - Effort or tools offered as proof of progress.
 - Status told as a story instead of a state.
@@ -91,7 +109,8 @@ The work register departs only in small ways. It allows greetings and sign-offs.
 | Channel | Register | Shape | Length |
 |---|---|---|---|
 | Slack DM or thread | Work | Name, ask, owner | 1 to 4 lines |
-| Slack team post | Work | Change, owners, goal date and thanks | Under 300 words |
+| Slack team announcement | Work | Change, owners, goal date and thanks | Under 300 words |
+| Slack team discussion | Work | His view as "I think", numbered italic headings, one ask per person with his position, thread request | Under 300 words |
 | Email | Work | Name, point, ask, `--dg` | 1 to 3 short paragraphs |
 | Email asking approval | Work | Labelled sections, ask first | One screen |
 | LinkedIn | Essay | Claim, story, verdict | Under 250 words |
@@ -105,7 +124,7 @@ The work register departs only in small ways. It allows greetings and sign-offs.
 3. If the reader has a file at `~/.claude/dgonzo/readers/<name>.md`, read it. Cite its rows when you check the draft.
 3. If the user named a source to rewrite or reply to, read it first.
 4. If the channel or the reader or the point is missing, ask once. Put all gaps in one message.
-5. Pick the register and the channel row.
+5. Pick the register and the channel row. For a Slack team post, decide first whether David announces a change or opens a question.
 6. Write the first line. In the work register it is the name, then the point or ask.
 7. Use only facts David gave in this session or in the source he named. The samples set rhythm, never content.
 8. If a claim needs evidence that is missing, insert `[FACT: what is needed]` and list it for David.
@@ -122,7 +141,7 @@ Run on every sentence before output. A sentence that fails a row gets rewritten,
 |---|---|
 | Subject | "We", "I" or a named person is the subject. No passive |
 | Noun | A number, a name or a concrete noun is in the sentence |
-| State | It says what is, the bad included, in plain words |
+| State | It says what is, the bad included, in plain words. On an open question, "I think" and the issue named |
 | Owner | If it describes a next step, it names who |
 | Repeat | The reader could say it back verbatim in their next email |
 | Whole | A reader's own words appear whole. A mandate is never shortened into shorthand |
@@ -133,9 +152,10 @@ Run on every sentence before output. A sentence that fails a row gets rewritten,
 2. Would David send each sentence to this reader?
 3. Does every name, number and story trace to David's input?
 4. Does each next step have a named owner?
-5. Is there a hedge, a gush or a line that reads like a motivational post? Cut it.
-6. Is the length inside the channel row?
-7. Does an email end with `--dg`?
+5. Is there a hedge on a claim or a status? A gush or a line that reads like a motivational post? Cut it.
+6. Does a post that opens a question state a verdict, quiz a lead or challenge the room? Rewrite it from the discussion table.
+7. Is the length inside the channel row?
+8. Does an email end with `--dg`?
 
 ## Output
 

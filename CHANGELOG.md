@@ -1,5 +1,13 @@
 # Changelog
 
+## dgonzo 1.5.0
+
+- `voice` separates a team post that opens a question from one that announces a change. On an open question David proposes with "I think". The hedge rule now covers claims and status only.
+- `voice` adds three work-register traits. A proposal on an open question. His position before a delegated ask to a lead. The thing named in the ask.
+- `voice` bans the quiz question to a lead and the challenge to the whole room. A channel post closes with a thread request and its reason. Slack in-message headings are numbered and italic.
+- `voice` reads the private samples with a file read, never a shell test. A wrong shell check skipped the file on 2026-11-11.
+- The public samples add pattern 19 with placeholders. It is a team discussion post.
+
 ## code-review 1.0.0 and dgonzo 1.4.0
 
 - First release of the `code-review` plugin. Install ID `code-review@dgonzo`.
