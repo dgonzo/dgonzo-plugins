@@ -148,7 +148,9 @@ def lint_lines(lines):
             bold_in_section = 0
             section_line = i
             heading_text = stripped.lstrip("#").strip()
-            if "—" in heading_text or " - " in heading_text or re.search(r":\s+\S+(?:\s+\S+){5,}$", heading_text):
+            # "DRD-0001: title" is a repo's id-and-title H1 contract, not a gloss.
+            is_doc_id_h1 = bool(re.match(r"^(?:DRD|DADR|ADR)-\d{4}:\s", heading_text))
+            if "—" in heading_text or " - " in heading_text or (not is_doc_id_h1 and re.search(r":\s+\S+(?:\s+\S+){5,}$", heading_text)):
                 yield i, "heading-gloss", "Heading carries a gloss. Use a bare heading and put the explanation in the body."
             if word_count(heading_text) > 12:
                 yield i, "heading-long", "Heading over 12 words. Read it cold. Does it parse alone?"
