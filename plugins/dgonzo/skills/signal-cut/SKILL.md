@@ -1,6 +1,6 @@
 ---
 name: signal-cut
-description: Draft or rework outward content for a technical audience in David's voice about something built or shipped. Builds a story from a real problem, breaks the expected shape for the format and swaps every claim for something the reader can see or run. Use for "write the launch post", "draft a blog post about this", "turn this into a LinkedIn thread", "write the demo script" or "this launch post sounds like marketing". Also for dgonzo:signal-cut. Not for taglines or positioning (position-lock), reader research (audience-model) or exec briefs (exec-brief). Not for opinion posts or plain rewrites in David's voice (voice). Not for an internal Slack announcement (slack:draft-announcement).
+description: Use for outward content about something built or shipped, such as a launch post, blog post, LinkedIn thread or demo script. Swaps each claim for something the reader can see or run. Not for opinion posts (voice).
 ---
 
 # signal-cut

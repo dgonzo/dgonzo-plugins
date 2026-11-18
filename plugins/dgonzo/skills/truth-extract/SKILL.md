@@ -1,6 +1,6 @@
 ---
 name: truth-extract
-description: Sort every claim in field notes, meeting transcripts, customer interviews, competitor material, vendor claims or Slack threads into Grounded, Inferred or Asserted. Cites the source of each claim and lists the questions that would ground the rest. Use for "what do we actually know from this", "separate fact from opinion", "is this claim backed by anything", "extract the facts from these notes" or "how much of this vendor pitch is true". Also for dgonzo:truth-extract. Not for choosing between options or vendors (decision-forge, build-vs-buy), finding the cause of an incident (postmortem), auditing a status report (ragb), judging a job candidate (hiring-debrief) or checking that a data analysis or query supports its conclusions (data:validate-data).
+description: Use on notes, transcripts, interviews, vendor pitches or threads, such as "what do we actually know" or "separate fact from opinion". Sorts every claim into Grounded, Inferred or Asserted with its source.
 ---
 
 # truth-extract
@@ -34,6 +34,16 @@ The three classes are defined in [references/classification.md](references/class
 13. Keep the questions for the top 7 Asserted claims. Merge two questions if one answer settles both.
 14. Write the report to a Markdown file in the repo folder the user is working in. Name it `truth-extract-<source-slug>.md`. If there is no repo folder, write it beside the source file. If the source was pasted, write it in the current working directory.
 15. Reply with the bottom line and a relative link to the file. Do not paste the whole report into the reply.
+
+## Game check
+
+Run after step 9 when a speaker gains if the claim is believed. A vendor, a candidate and an owner reporting on their own work all do.
+
+| Mode | The step |
+|---|---|
+| Evidence and falsification | Record what the speaker gains. Then name the observation that would prove the claim false |
+
+A claim nothing could prove false stays Asserted. The falsifying observation becomes its grounding question.
 
 ## Output
 

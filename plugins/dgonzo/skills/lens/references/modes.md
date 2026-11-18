@@ -1,19 +1,20 @@
 # Reasoning modes
 
-This file lists all 45 reasoning modes in 7 categories. Each entry gives the mode's lookup name and purpose. Then it gives the prompt and when to use it.
+This file lists all 56 reasoning modes in 8 categories. Each entry gives the mode's lookup name and purpose. Then it gives the prompt and when to use it.
 
-The `lens` skill reads this file. The lookup name is what follows `dgonzo:lens`, as in `dgonzo:lens skeptic`. Each prompt keeps the source wording in sentence case. Fill any placeholder such as `[X]` from the input before running the prompt.
+The `lens` skill reads this file. The lookup name is what follows `dgonzo:lens`, as in `dgonzo:lens skeptic`. Each prompt in the first 7 categories keeps the gwrk source wording in sentence case. The Game category and the last two Reasoning modes come from David's market mode stack. Their prompts were written on 2026-11-18 from the mode names and two worked notes. Replace them with the source wording when it is exported. Fill any placeholder such as `[X]` from the input before running the prompt.
 
 | Category | Modes | Job |
 |---|---|---|
-| Reasoning | 8 | How to think |
+| Reasoning | 10 | How to think |
 | Evaluative | 6 | Find the cracks |
 | Creative | 6 | Break the default answer |
 | Persona | 8 | Decide who is in the room |
 | Communication | 6 | Change how the answer lands |
 | Operational | 6 | Move from thinking to doing |
 | Meta | 5 | Question the reasoning itself |
-| Total | 45 | |
+| Game | 9 | Read the other players |
+| Total | 56 | |
 
 ## Reasoning
 
@@ -80,6 +81,22 @@ Lookup: `expansive`. Widen the field before narrowing it.
 > "Generate maximum surface area before filtering. Volume first, judgment second."
 
 Use early in a problem, when the first option on the table is the only one anyone has considered.
+
+### Evidence and falsification
+
+Lookup: `falsification`. Name what would prove each claim wrong.
+
+> "For each claim, what observation would prove it false? If nothing could, say so."
+
+Use on a claim from someone who gains if it is believed, or on your own finding before you act on it.
+
+### Base rates
+
+Lookup: `base-rates`. Start from how often this kind of thing works.
+
+> "Before judging this case, how often does this kind of thing succeed? Name the reference class and the source."
+
+Use on a forecast, a hire or a bet that is argued only from its own details.
 
 ## Evaluative
 
@@ -388,3 +405,79 @@ Lookup: `integrative`. Unify the output of several modes.
 > "Synthesize everything we've covered into a single coherent framework. No redundancy."
 
 Use after two or more lenses, to merge them into one view. The `lens` skill runs it as its last pass.
+
+## Game
+
+Each mode treats the situation as a game. Other people are players who choose too.
+
+### Equilibrium diagnosis
+
+Lookup: `equilibrium`. Explain why a bad pattern is stable.
+
+> "This pattern keeps repeating. For each player, why is their current behaviour the best reply to what the others do? Who pays for moving first?"
+
+Use when the same argument or the same failure comes round a third time.
+
+### Incentive compatibility
+
+Lookup: `incentives`. Compare what each player is rewarded for with what the goal needs.
+
+> "What is each player paid or rewarded to do? Where does that differ from what we need them to do?"
+
+Use on a seller, an owner reporting on their own work, or any metric someone is rewarded for.
+
+### Signaling and screening
+
+Lookup: `signaling`. Read what a message discloses, and design asks that sort strong from weak.
+
+> "What does our ask reveal about us? What could we ask that a strong counterparty answers easily and a weak one cannot?"
+
+Use before an ask or a request for information goes to another party.
+
+### Information asymmetry
+
+Lookup: `asymmetry`. Map who knows what the other side does not.
+
+> "What do they know that we do not, before and after we commit? What do we know that they do not?"
+
+Use before a purchase, a hire or a partnership where the other side knows its own quality.
+
+### Bargaining and outside options
+
+Lookup: `outside-options`. State each side's walk-away.
+
+> "What does each side do if there is no deal? How does each walk-away change with time?"
+
+Use before a negotiation, a quote or an ask a person can refuse.
+
+### Credible commitment
+
+Lookup: `commitment`. Test which promises survive later moves.
+
+> "For each promise, what makes it costly to break? Which promises are only talk?"
+
+Use before giving a number or a date, and before relying on someone else's.
+
+### Sequential play
+
+Lookup: `sequential`. Reason backward from the end state.
+
+> "Lay out the moves in order. Start from the last move and reason backward. What must the first move be?"
+
+Use when the order of conversations or steps changes the outcome.
+
+### Reputation
+
+Lookup: `reputation`. Treat the move as one round of a repeated game.
+
+> "This is not the last round. What does this move teach each observer about us? What precedent does it set?"
+
+Use on a move that peers, a boss or other vendors will watch.
+
+### Mechanism design
+
+Lookup: `mechanism`. Change the rules so the right behaviour is each player's best reply.
+
+> "What rule, measure or default would make the behaviour we want each player's best choice? Give at most three."
+
+Use after Equilibrium diagnosis, when persuasion has failed and the rules can change.

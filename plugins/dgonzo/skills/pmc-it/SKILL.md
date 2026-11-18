@@ -1,6 +1,6 @@
 ---
 name: pmc-it
-description: Get any artifact in shape for Peter Castleman, CEO, before he sees it. A deck, a memo, an email or a Slack message. Leads with the one decision that is his, uses his own words whole, gives every number its target and a verdict, and strips everything he calls noise. Use for "get this ready for Peter", "pmc this", "will this land with Peter" or /dgonzo:pmc-it. Not for modelling him (audience-model) or for a generic executive (exec-brief).
+description: Use on anything Peter, the CEO, will read, whether a deck, memo, email or Slack message. Triggers are "pmc this" and "get this ready for Peter". Leads with his one decision in his own words, from his private reader file.
 ---
 
 # pmc-it
@@ -28,6 +28,17 @@ Produces a Peter-ready version of an artifact and predicts his reply. It counter
 9. Run pass 2 on the result. Predict his first question and his first next action. If the first two lines do not answer the first question, go back to step 4.
 10. Write the result beside the source as `<name>-pmc.md`, or edit the deck in place when asked.
 11. Report the prediction and what you cut.
+
+## Game check
+
+Run after step 7 when the artifact promises Peter a number or a date.
+
+| Mode | The step |
+|---|---|
+| Signaling and screening | Name what the artifact tells Peter about how the team works, beyond the ask |
+| Credible commitment | For each promised number or date, name what makes it kept. With nothing behind it, change the promise to a measure-first step |
+
+Report both with what was cut.
 
 ## Output
 

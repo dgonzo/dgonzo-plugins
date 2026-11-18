@@ -1,6 +1,6 @@
 ---
 name: architecture-stress-test
-description: Stress-test a plan before work starts. Maps phases, dependency edges and the critical path. Runs a pre-mortem. Compares the plan with a simpler, a more parallel and a more conservative version. Returns APPROVE or REVISE. Use for "stress-test this plan", "poke holes in this migration plan", "check the phase ordering", "will this rollout hold" or "stress-test this design doc before we build". Also for dgonzo:architecture-stress-test. Not for writing a plan (superpowers:writing-plans), reviewing code (code-review:code-review), choosing between two designs (decision-forge) or a bare pre-mortem with no plan review (lens).
+description: Use on a plan with phases before work starts, such as "stress-test this plan" or "poke holes in this migration". Maps dependencies, runs a pre-mortem and compares simpler versions. Returns APPROVE or REVISE.
 ---
 
 # architecture-stress-test

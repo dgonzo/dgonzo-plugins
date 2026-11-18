@@ -1,6 +1,6 @@
 ---
 name: audience-model
-description: Model one specific reader before writing to them, such as an exec, a customer, a candidate or a team. Simulates their response to the ask, lists what is unknown about them and checks each claim against their past behaviour. Produces a reader model that dgonzo:signal-cut, dgonzo:position-lock and dgonzo:exec-brief build on. Use for "who am I writing for", "model this reader", "how will the CFO read this", "what does this audience care about" or "how will this reader take the ask". Also for dgonzo:audience-model. Not for writing the message, sorting claims from customer interviews (truth-extract) or judging whether to hire a candidate (hiring-debrief).
+description: Use before writing to a reader David has not written to before, such as an exec, customer, candidate or team. Builds a private reader file with their likely response, what they gain and lose, and their vocabulary.
 ---
 
 # audience-model
@@ -26,7 +26,7 @@ The model feeds `dgonzo:signal-cut`, `dgonzo:position-lock` and `dgonzo:exec-bri
 3. If the user named a thread you cannot open, ask them to paste it.
 4. If the reader or the ask is missing, ask once for both. The ask is what David wants the reader to do.
 5. If the reader is a group, model the person who decides. Also model one named member who will act on the message. Write one model per person.
-6. Run pass 1. Fill the Reader fields listed under Output. Tag each field observed, stated or assumed.
+6. Run pass 1. Fill the Reader fields listed under Output. Tag each field observed, stated or assumed. The gain, loss and outside option fields are the Incentive compatibility check. `dgonzo:lead-out` and `dgonzo:game` read them.
 7. Predict one response from the list under Output. If a draft exists, predict the response to the draft as written.
 8. List what David wants the reader to care about. Mark each item the reader model does not share as a projection.
 9. Run pass 2. List the open questions.
@@ -54,6 +54,9 @@ The file has these sections, in this order. For a group, repeat sections 2 to 7 
    - what they own
    - what they are measured on
    - their pressure this week
+   - what they gain if the ask succeeds
+   - what they lose if the ask succeeds
+   - their outside option, which is what they do if they ignore the ask
 3. Predicted response. One of these:
    - reads and acts
    - reads and forwards

@@ -1,5 +1,18 @@
 # Changelog
 
+## dgonzo 2.0.0
+
+- A SessionStart hook prints `card.md` and the `working-style` rules. The card holds the stance, a router table for every skill and the gates. Routing no longer depends on listing descriptions.
+- New skill `lead-out`. It returns David's position in one sentence, the order of conversations, an ask and a day per person, a room check and his first line.
+- New skill `game`. It picks one of three game theory stacks, standoff, counterparty or commitment, and returns one move.
+- `lens` holds 56 modes in 8 categories. The new Game category has 9 modes. Reasoning gains Evidence and falsification, and Base rates. Their prompts are provisional until the source wording is exported.
+- Nine skills gain a Game check, one conditional step each. They are `build-vs-buy`, `exec-brief`, `pmc-it`, `cut-list`, `ragb`, `postmortem`, `hiring-debrief`, `decision-forge` and `truth-extract`.
+- `audience-model` adds three reader fields. What the reader gains, what they lose and their outside option.
+- `working-style` adds a Stance section. Talk as a peer, get David to a position, flag deference, stay above the line.
+- `voice` states a held view once with "I think" and gives every ask a day. The team discussion rows apply only when David holds no view. The gate adds Position, Day and Above the line.
+- Every description is at most 260 characters and opens with its trigger. A test enforces the limit.
+- Breaking: the old descriptions carried "Not for" routing lists. The card's router table replaces them.
+
 ## dgonzo 1.5.0
 
 - `voice` separates a team post that opens a question from one that announces a change. On an open question David proposes with "I think". The hedge rule now covers claims and status only.

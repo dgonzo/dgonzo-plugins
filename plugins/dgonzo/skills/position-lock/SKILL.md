@@ -1,6 +1,6 @@
 ---
 name: position-lock
-description: Turn a product, project or idea that is described as a list of features into one position and a headline of 10 words or fewer. Strips it to the one thing it makes possible. Tests that against the status quo, the closest competitor and the category. Then scores headline candidates. Use for "write a tagline", "sharpen our positioning", "elevator pitch for this", "landing page headline" or "how do we stand apart from X". Also for dgonzo:position-lock. Not for blog posts or announcements (signal-cut), product names (naming-forge) or choosing a vendor (build-vs-buy).
+description: Use for a tagline, headline, elevator pitch or product positioning. Turns a feature list into one position of 10 words or fewer, tested against the status quo and the closest competitor. Not for names (naming-forge).
 ---
 
 # position-lock

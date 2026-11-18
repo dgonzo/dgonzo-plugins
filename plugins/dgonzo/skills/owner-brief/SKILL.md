@@ -1,6 +1,6 @@
 ---
 name: owner-brief
-description: Turn work that is about to change hands into a brief with one accountable owner, a one-sentence objective, a facts table, ordered steps, owned blockers and a "Done when" checklist. The receiver is a person or a future agent session. Use for "write a handoff brief", "brief the next session", "who owns this and when is it done", "pass this work to a teammate" or "set up a fresh session for this". Also for dgonzo:owner-brief. Not for status reports (ragb), an implementation plan (superpowers:writing-plans) or gh and make commands that ship data-org docs (data-org-cowork-plugin:handoff).
+description: Use when work changes hands to a person or a fresh agent session, such as "write a handoff" or "brief the next session". Gives one owner, one objective, the facts, ordered steps and a done-when checklist.
 ---
 
 # owner-brief

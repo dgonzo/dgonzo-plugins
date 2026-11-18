@@ -1,6 +1,6 @@
 ---
 name: hiring-debrief
-description: Turn interview notes or a scorecard for one candidate into a hire or no-hire recommendation. Every rating is tied to observed behaviour, confidence is rated per competency, and the opposite decision is argued in full. Use for "debrief this candidate", "hire or no hire", "review this candidate's interview notes", "write up the panel debrief" or "is this candidate a hire". Also for dgonzo:hiring-debrief. Not for headcount or other general decisions (decision-forge), comparing vendors (build-vs-buy), modelling a candidate as a reader (audience-model) or user-research interviews (truth-extract).
+description: Use on interview notes or a scorecard for one candidate, such as "hire or no hire" or "debrief this candidate". Ties each rating to observed behaviour, rates confidence and argues the opposite call in full.
 ---
 
 # hiring-debrief
@@ -38,6 +38,17 @@ It counters the failure where one strong impression decides the hire.
 17. Turn each open risk into a reference-check question.
 18. Name what blocks the decision and its owner. If the input names no owner, give the role and mark the name unknown. Hiring manager is the usual role.
 19. Write the debrief as Markdown to `hiring-debrief-<role>-<YYYY-MM-DD>.md` in the folder the user is working in. Link it with a relative Markdown link. Do not commit it.
+
+## Game check
+
+Run after step 9 when a competency was rated from one interview format only.
+
+| Mode | The step |
+|---|---|
+| Signaling and screening | For that competency, say what the format could screen for and what a weak candidate could also have answered |
+| Base rates | If the input gives one, state how often hires with this profile succeed in this role. Otherwise write "base rate unknown" |
+
+Report both under Open risks. A competency the format could not screen becomes a reference-check question.
 
 ## Output
 
