@@ -1,6 +1,6 @@
 ---
 name: decision-forge
-description: Test one pending decision for confirmation bias. Attacks it, builds the strongest case for the rival option, rates confidence by dimension and prices the cost of reversing it. For architecture choices, technology bets, a vendor already chosen, headcount calls and single priority calls. Use for "pressure-test this decision", "attack this choice", "steel-man the option we rejected", "am I fooling myself on this" or "how sure should we be about X". Also for dgonzo:decision-forge. Not for choosing build, buy or a vendor (build-vs-buy), names (naming-forge), a plan before work starts (architecture-stress-test), ranking a backlog (cut-list) or judging a candidate (hiring-debrief). Never writes the decision record. That is data-org-cowork-plugin:draft-dadr.
+description: Use on one decision that already leans one way, such as "pressure-test this decision" or "am I fooling myself". Attacks it, steel-mans the rival, rates confidence and prices reversal. Not for a vendor choice (build-vs-buy).
 ---
 
 # decision-forge
@@ -46,6 +46,17 @@ The scales and tests for each pass are in [references/rubrics.md](references/rub
 23. Write the result as Markdown named `decision-forge-<slug>.md`. Put it beside the source file, or else in the repo folder the user is working in.
 24. Reply with the verdict sentence and a relative link to the file.
 25. If the repo is data-org, add one line: the file can feed a DADR (data-org decision record) through `/data-org-cowork-plugin:draft-dadr`.
+
+## Game check
+
+Run when other parties move after the decision is made.
+
+| Mode | When | The step |
+|---|---|---|
+| Base rates | Before step 17 | State how often this kind of decision works out, with its source. Otherwise write "base rate unknown" |
+| Sequential play | In step 19 | List the moves after the decision and who makes each. The point of no return is the last move the owner controls |
+
+Report the base rate in the Confidence section and the moves in the Reversibility section.
 
 ## Output
 

@@ -1,6 +1,6 @@
 ---
 name: ragb
-description: Write or audit a team status in RAGB. Every initiative gets one owner, one honest colour, one pointable fact and one next move. RED means at risk of not shipping. AMBER means standard operating risk. GREEN means shipped, verified and in the customer's hands. BLACK means stopped. Use for "write the team status in RAGB", "audit this status report", "is this status honest", "RAGB the weekly update" or "RAGB this thread". Also for dgonzo:ragb. Not for a standup of your own activity (slack:standup), a status update in the company comms format (internal-comms) or make and gh commands for the data-org board (data-org-cowork-plugin:handoff). Not for ranking priorities (cut-list), handing off work (owner-brief) or a postmortem on finished work (postmortem).
+description: Use to write or audit a status update, such as "RAGB this" or "is this status honest". Each initiative gets one owner, one colour, one checkable fact and one next move. GREEN means shipped, verified and with the customer.
 ---
 
 # ragb
@@ -36,6 +36,16 @@ The four fields are the owner and the colour, then the fact and the next move. T
 15. If the next move has no date, write "no date" and list it as a gap.
 16. Write the result to `status-<YYYY-MM-DD>.md` in the repo folder the user is working in. Use today's date. Link the file in the reply.
 17. Put the bottom line and the RED table in the reply as well.
+
+## Game check
+
+Run in pass 2 when an owner sets their own colour and the artifact does not back it.
+
+| Mode | The step |
+|---|---|
+| Incentive compatibility | Say whether the owner is rewarded for the colour or for the fact |
+
+When the reward follows the colour, list it as a gap: "colour is self-reported and rewarded". Name the rule, never the person.
 
 ## Output
 

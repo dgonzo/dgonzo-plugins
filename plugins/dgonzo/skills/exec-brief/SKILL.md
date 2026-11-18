@@ -1,6 +1,6 @@
 ---
 name: exec-brief
-description: Write a one-page brief or a Slack message to an executive that opens with the ask and the deadline, then options only if the exec must choose, then the evidence. In David's voice with house structure. Use for "brief the CEO", "write the ask to the CTO", "I need a decision from the board", "exec summary for Slack" or "make this ask land with leadership". Also for dgonzo:exec-brief. Not for testing the decision itself (decision-forge), a status report (ragb), a routine leadership update with no ask (internal-comms), a launch post (signal-cut) or modelling the reader (audience-model).
+description: Use for an ask or a brief to an executive other than Peter, such as "brief the CTO" or "I need a decision from the board". Opens with the ask and the deadline, then options, then evidence. For Peter use pmc-it.
 ---
 
 # exec-brief
@@ -44,6 +44,17 @@ It counters detail that buries the ask, where the exec reads three paragraphs an
 23. If the channel is Slack or an approval email, return the message in the reply ready to paste.
 
 The skeletons for all three channels are in [references/templates.md](references/templates.md).
+
+## Game check
+
+Run after step 16 when the brief goes outside the company, or promises a number or a date.
+
+| Mode | The step |
+|---|---|
+| Signaling and screening | List what the ask discloses beyond what the exec needs to act. Cut it |
+| Credible commitment | For each promised number or date, name what makes it kept. With nothing behind it, mark it `(not yet committed)` |
+
+Report both to David with the items pass 2 cut.
 
 ## Output
 

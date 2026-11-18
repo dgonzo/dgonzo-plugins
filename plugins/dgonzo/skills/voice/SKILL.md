@@ -1,6 +1,6 @@
 ---
 name: voice
-description: Draft or rewrite text in David's own professional voice for anything sent under his name. Covers Slack messages, emails, LinkedIn opinion posts, essays and memos. Name first, then the ask. Owners named, numbers as receipts, short and warm at work. Flat conviction in essays. Use for "write this in my voice", "make this sound like me", "draft a Slack reply from me", "reply to this as me" or "rewrite my email". Also for dgonzo:voice. Not for team documents or a plain PR description, which follow writing:writing-standard. Not for a launch post, blog post or demo about something built, which is dgonzo:signal-cut. Not for an internal Slack announcement, which is /slack:draft-announcement. Not for a brief that asks executives for a decision, which is dgonzo:exec-brief.
+description: Use for any text sent under David's name, such as Slack, email, LinkedIn, an essay or a memo. Triggers are "in my voice", "reply as me" and "draft a Slack from me". Not for team documents, which follow writing:writing-standard.
 ---
 
 # voice
@@ -23,9 +23,11 @@ Read [references/samples.md](references/samples.md) before every draft. If `~/.c
 | Numbers as receipts | Give the figure that backs the claim | "85% coverage, which we're ok with" |
 | Short replies | A one-line reply is enough when one line answers | "These will be done." |
 | Plain warmth | One short line of thanks, no gushing | "Really appreciate it." |
-| One real question | End on the single question that unblocks him | "Is there anything I can do from my end?" |
+| One real question | Ask the single question that unblocks him. Only when he is blocked, never as a closer in place of an ask | "Is there anything I can do from my end?" |
 | Sign-off | `--dg` on email, none on Slack | `--dg` |
-| Proposal on an open question | Open with "I think" when the team has not settled it | "I think there may be <issue>." |
+| Position he holds | State it once with "I think". No second softener | "I think <position>." |
+| Dated ask | Give every ask a day | "<Name>, would you <verb> <thing> by <day>?" |
+| Question with no view yet | Open with "I think" when the team has not settled it and he holds no view | "I think there may be <issue>." |
 | Position, then delegate | In an ask to a lead, say what he wants true, then ask them to work it out | "We should make sure <outcome>. <Name>, would you work with folks here to determine <detail>." |
 | Thing named in the ask | Repeat the noun in place of "that" | "is <thing> the right done for <team>?" |
 | Structure for big asks | Ask, amount and deadline first, then capitalised labels | `WHAT`, `WHY`, `WHEN`, `COST`, `ASK` |
@@ -34,7 +36,9 @@ Slack may be lowercase and casual in a one-line DM. Never add typos. One Slack e
 
 ### Opening a team discussion
 
-David opens a question for the team to work out. He does not announce a verdict. A flat verdict on an open question reads as the decision already made.
+Use this section only when David holds no view yet. Ask him if it is unclear. When he holds a view, the post states it once with "I think" and no second softener. Then it gives each lead an ask with a day.
+
+With no view yet, David opens a question for the team to work out. He does not announce a verdict. A flat verdict on an open question reads as the decision already made.
 
 | Miss | Do not write | Write |
 |---|---|---|
@@ -77,7 +81,10 @@ Five ways a draft misses while sounding strong. Each has a test.
 
 ## Both registers avoid
 
-- Hedges on a claim or a status, and consensus language. "I think" on a question still open with the team is a proposal, not a hedge.
+- Hedges on a claim or a status, and consensus language. "I think" once on a view he holds is a position, not a hedge. A second softener is a hedge.
+- A question where he holds a view.
+- An ask with no day.
+- Blame of a person, and doom. A problem comes with its next move.
 - Motivational filler.
 - Effort or tools offered as proof of progress.
 - Status told as a story instead of a state.
@@ -110,7 +117,8 @@ The work register departs only in small ways. It allows greetings and sign-offs.
 |---|---|---|---|
 | Slack DM or thread | Work | Name, ask, owner | 1 to 4 lines |
 | Slack team announcement | Work | Change, owners, goal date and thanks | Under 300 words |
-| Slack team discussion | Work | His view as "I think", numbered italic headings, one ask per person with his position, thread request | Under 300 words |
+| Slack team position | Work | His view once as "I think", numbered italic headings, one ask per lead with a day, thread request | Under 300 words |
+| Slack team discussion | Work | Only with no view yet. The issue as "I think there may be", numbered italic headings, one ask per person, thread request | Under 300 words |
 | Email | Work | Name, point, ask, `--dg` | 1 to 3 short paragraphs |
 | Email asking approval | Work | Labelled sections, ask first | One screen |
 | LinkedIn | Essay | Claim, story, verdict | Under 250 words |
@@ -122,16 +130,16 @@ The work register departs only in small ways. It allows greetings and sign-offs.
 1. Read the sample files named above. For the essay register or a presentation, read the full essay at `~/Projects/MyTools/gwrk/docs/product/FOXTROT-CHARLIE.md` as well. The excerpts give rhythm. The essay gives posture.
 2. If the text is a team document, stop and apply `writing:writing-standard` instead.
 3. If the reader has a file at `~/.claude/dgonzo/readers/<name>.md`, read it. Cite its rows when you check the draft.
-3. If the user named a source to rewrite or reply to, read it first.
-4. If the channel or the reader or the point is missing, ask once. Put all gaps in one message.
-5. Pick the register and the channel row. For a Slack team post, decide first whether David announces a change or opens a question.
-6. Write the first line. In the work register it is the name, then the point or ask.
-7. Use only facts David gave in this session or in the source he named. The samples set rhythm, never content.
-8. If a claim needs evidence that is missing, insert `[FACT: what is needed]` and list it for David.
-9. Draft with the traits of the chosen register. Use two to four essay traits, never all.
-10. Run the self-check and fix every miss.
-11. If the text is a message, return it in a fenced block ready to paste.
-12. If the text is a document David keeps, write it as Markdown in his working repo folder. Link it.
+4. If the user named a source to rewrite or reply to, read it first.
+5. If the channel or the reader or the point is missing, ask once. Put all gaps in one message.
+6. Pick the register and the channel row. For a Slack team post, decide first whether David announces a change, states a position or opens a question. He opens a question only when he holds no view.
+7. Write the first line. In the work register it is the name, then the point or ask.
+8. Use only facts David gave in this session or in the source he named. The samples set rhythm, never content.
+9. If a claim needs evidence that is missing, insert `[FACT: what is needed]` and list it for David.
+10. Draft with the traits of the chosen register. Use two to four essay traits, never all.
+11. Run the gate and the self-check and fix every miss.
+12. If the text is a message, return it in a fenced block ready to paste.
+13. If the text is a document David keeps, write it as Markdown in his working repo folder. Link it.
 
 ### The gate
 
@@ -145,6 +153,9 @@ Run on every sentence before output. A sentence that fails a row gets rewritten,
 | Owner | If it describes a next step, it names who |
 | Repeat | The reader could say it back verbatim in their next email |
 | Whole | A reader's own words appear whole. A mandate is never shortened into shorthand |
+| Position | Where David holds a view, the sentence states it. It does not ask it |
+| Day | An ask names a day |
+| Above the line | No blame of a person and no doom. A problem carries its next move |
 
 ### Self-check
 
@@ -154,8 +165,10 @@ Run on every sentence before output. A sentence that fails a row gets rewritten,
 4. Does each next step have a named owner?
 5. Is there a hedge on a claim or a status? A gush or a line that reads like a motivational post? Cut it.
 6. Does a post that opens a question state a verdict, quiz a lead or challenge the room? Rewrite it from the discussion table.
-7. Is the length inside the channel row?
-8. Does an email end with `--dg`?
+7. Does David hold a view that the draft asks as a question? State it once with "I think".
+8. Does every ask name a day? Does the draft close on an ask, not on an offer to help?
+9. Is the length inside the channel row?
+10. Does an email end with `--dg`?
 
 ## Output
 

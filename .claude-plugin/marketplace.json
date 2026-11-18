@@ -10,7 +10,7 @@
       "name": "dgonzo",
       "displayName": "dgonzo",
       "source": "./plugins/dgonzo",
-      "description": "David Gonzalez's 18 personal skills: working style, voice, reasoning, judgment and leadership. Shared across Claude, Antigravity, Codex and ChatGPT.",
+      "description": "David Gonzalez's 20 personal skills: working style, voice, reasoning, game theory, judgment and leadership. A session hook loads the stance and a router. Shared across Claude, Antigravity, Codex and ChatGPT.",
       "author": {
         "name": "David Gonzalez",
         "url": "https://github.com/dgonzo"

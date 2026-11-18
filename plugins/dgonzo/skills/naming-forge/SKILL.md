@@ -1,6 +1,6 @@
 ---
 name: naming-forge
-description: Pick one name for a product, feature, CLI command, repo, plugin, skill or set of taxonomy categories. Argues for and against each candidate and scores the survivors on five criteria. Then it crosses the brief with an unrelated domain to find a wild card. Returns one recommended name with its scorecard. Use for "name this", "what should we call it", "is this a good name", "rename this command" or "help me name these categories". Also for dgonzo:naming-forge. Not for variable, function or file names inside code, taglines (position-lock), word choice in prose, or decisions that are not about a name (decision-forge).
+description: Use when a product, feature, command, repo, skill or category needs a name, such as "name this" or "what should we call it". Scores candidates on five criteria and returns one name. Not for taglines (position-lock).
 ---
 
 # naming-forge

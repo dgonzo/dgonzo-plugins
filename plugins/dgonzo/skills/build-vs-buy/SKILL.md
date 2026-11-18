@@ -1,6 +1,6 @@
 ---
 name: build-vs-buy
-description: Compare building, buying, partnering and doing nothing on the same criteria, then recommend one option with the evidence behind every score. Weighs who runs it at 2am, the integration and exit cost and the 18-month outlook. Marks every vendor claim unverified until someone checks it. Use for "should we build or buy", "pick a vendor", "should we adopt this tool", "is this SaaS worth paying for" or "build, buy or partner". Also for dgonzo:build-vs-buy. Not for testing a vendor choice already made or a choice between two designs the team builds itself (decision-forge). Not for sorting the claims in one vendor pitch (truth-extract).
+description: Use for a vendor or tool choice not yet made, such as "build or buy", "pick a vendor" or "is this SaaS worth it". Scores build, buy, partner and do nothing on evidence. Every vendor claim stays unverified until checked.
 ---
 
 # build-vs-buy
@@ -39,6 +39,17 @@ This skill produces a scored recommendation to build, buy or partner against a d
 20. If do nothing scores within 2 points of the leader, recommend do nothing until the checks finish.
 21. Write the result as Markdown in the folder the user is working in, named `build-vs-buy-<topic>.md`.
 22. Reply with the bottom line and a link to the file. Do not paste the whole document.
+
+## Game check
+
+Run after step 12 when an option is a vendor or a partner.
+
+| Mode | The step |
+|---|---|
+| Incentive compatibility | Name what each seller is paid to sell. Say where that differs from the need |
+| Bargaining and outside options | Name the walk-away for each option. Say whether time makes it stronger or weaker |
+
+Report both in the Unverified claims section, one row per seller. A full read of the seller is `dgonzo:game` counterparty.
 
 ## Output
 

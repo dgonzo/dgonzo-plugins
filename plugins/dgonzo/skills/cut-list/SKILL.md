@@ -1,6 +1,6 @@
 ---
 name: cut-list
-description: Force-rank a backlog, roadmap, quarter plan or list of asks against one stated goal. Then split it into keep, defer and cut, with each cut marked BLACK and a line to send. Use for "everything is P0", "what do we cut", "too many priorities", "rank this backlog" or "trim the quarter plan". Also for dgonzo:cut-list. Not for one decision between options (decision-forge), status reports (ragb), vendor choices (build-vs-buy) or adding and completing tasks in TASKS.md (productivity:task-management).
+description: Use when there are too many priorities, such as "everything is P0", "what do we cut" or "rank this backlog". Force-ranks against one goal, then splits into keep, defer and cut, with a line to send for each cut.
 ---
 
 # cut-list
@@ -46,6 +46,16 @@ BLACK means stopped on purpose, as in `dgonzo:ragb`. A BLACK item gets no work t
 23. Write one line per cut that the owner can send to the requester.
 24. If the user named a repo folder or is working in one, write the result there as Markdown. Use [the output template](references/output-template.md) and link the file.
 25. If there is no repo folder, reply inline in the same sections.
+
+## Game check
+
+Run after step 18 when the input calls more than half the items top priority, or when the same items survived the last cut.
+
+| Mode | The step |
+|---|---|
+| Equilibrium diagnosis | Name who pays for cutting an item, and who gains while every item stays top priority |
+
+State it as a rule or a reward, never as a person's fault. Report it under Assumptions as "Why everything is top priority". A full read is `dgonzo:game` standoff.
 
 ## Output
 

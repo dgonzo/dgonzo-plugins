@@ -1,6 +1,6 @@
 ---
 name: postmortem
-description: Write a blameless postmortem for an incident, a missed launch, a failed project or a lost deal. Builds a sourced timeline, tests which single changes would have prevented it, checks for precedent, and ends with dated actions that each have one owner. Use for "write a postmortem", "incident review for", "what went wrong with the launch", "why did we lose the deal" or "blameless review of". Also for dgonzo:postmortem. Not for a pre-mortem on a plan that has not run yet (architecture-stress-test), a status report on work still in flight (ragb), debugging a live bug (superpowers:systematic-debugging) or a short incident notice to the company (internal-comms).
+description: Use when something failed, such as an incident, a missed launch or a lost deal. Triggers are "write a postmortem" and "what went wrong". Blameless timeline, tested causes, precedent and dated actions with one owner each.
 ---
 
 # postmortem
@@ -44,6 +44,16 @@ A blame story names a person and stops. The cause is the condition that let a no
 23. Name the file `postmortem-<yyyy-mm-dd>-<slug>.md`, dated by the event.
 24. If the `writing:lint` command is available, run it on the file and fix every real finding.
 25. Reply with the bottom line and a relative link to the file.
+
+## Game check
+
+Run after step 18 when pass 3 finds a Sourced precedent. A repeat is a pattern, not an incident.
+
+| Mode | The step |
+|---|---|
+| Equilibrium diagnosis | Say why each party's action was their best reply to the others. Name who would have paid for acting first |
+
+Add the result as one contributing cause, written as a condition. Its action changes a rule or a reward. It stays blameless.
 
 ## Output
 

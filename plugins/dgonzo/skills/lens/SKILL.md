@@ -1,13 +1,13 @@
 ---
 name: lens
-description: Run one or more of 45 named reasoning modes on a doc, plan, decision or thread. Each mode gets its own section, then a short note on what changed in the user's view. Use for "run a pre-mortem on this", "steel-man this argument", "play devil's advocate", "look at this through a lens" or "what would a skeptic say". Also for dgonzo:lens with an optional mode name, such as dgonzo:lens skeptic. Not for a job a dgonzo compound skill owns, such as a full decision test (decision-forge), a plan review (architecture-stress-test), checking claims in notes (truth-extract), a candidate debrief (hiring-debrief), a postmortem (postmortem) or a status report (ragb).
+description: Use to run named reasoning modes on a doc, plan, decision or thread, such as "pre-mortem this", "steel-man this", "devil's advocate" or "what would a skeptic say". Holds 56 modes. Also dgonzo:lens with a mode name.
 ---
 
 # lens
 
 Produces one section per reasoning mode applied to the input, then a note on what changed in the user's view. It counters the default lens: an unprompted model answers in the safe analytical mode, whatever the problem needs.
 
-The 45 modes, their prompts and when to use each are in [references/modes.md](references/modes.md).
+The 56 modes, their prompts and when to use each are in [references/modes.md](references/modes.md).
 
 ## Passes
 
@@ -30,7 +30,7 @@ The 45 modes, their prompts and when to use each are in [references/modes.md](re
 8. Fill each placeholder in the prompt from the input, for example `[X]`. Name what you filled in.
 9. If a prompt opposes "my position" and the user stated none, use the input's main claim. Say so.
 10. Run each mode as its own section. Never blend two modes in one section.
-11. If a mode's prompt asks for new output in place of a critique, treat it as a producing mode. Generative, Editor and Planning are examples. Treat every other mode as a finding mode.
+11. If a mode's prompt asks for new output in place of a critique, treat it as a producing mode. Generative, Editor, Planning and Mechanism design are examples. Treat every other mode as a finding mode.
 12. For a finding mode, list findings and tie each to a quote or line.
 13. For a producing mode, give the output its prompt asks for. Keep any count the prompt names, such as 15 ideas.
 14. For Interviewer or Socratic, list the questions and stop that section. Never answer them for the user.
@@ -52,6 +52,10 @@ The 45 modes, their prompts and when to use each are in [references/modes.md](re
 | An estimate that sounds sure of everything | Calibration |
 | A failure with a convenient story | Forensic |
 | One option judged alone | Comparative |
+| An argument that keeps coming back | Equilibrium diagnosis |
+| A claim from someone paid to make it | Incentive compatibility |
+| A promise with nothing behind it | Credible commitment |
+| A forecast with no track record beside it | Base rates |
 
 ## Common stacks
 
@@ -73,6 +77,10 @@ Three modes in a fixed order counter one failure mode. These stacks have their o
 | Write a tagline or position | Reductive, Comparative, Aesthetic | `dgonzo:position-lock` |
 | Model a reader | Modeling, Interviewer, Forensic | `dgonzo:audience-model` |
 | Brief an executive | Translator, Reductive, Modeling | `dgonzo:exec-brief` |
+| Move a room to a position | Reductive, Sequential play, Modeling | `dgonzo:lead-out` |
+| Break an argument that repeats | Equilibrium diagnosis, Incentive compatibility, Mechanism design | `dgonzo:game` standoff |
+| Prepare an ask to a counterparty | Information asymmetry, Signaling and screening, Bargaining and outside options | `dgonzo:game` counterparty |
+| Test a promise before making it | Credible commitment, Sequential play, Reputation | `dgonzo:game` commitment |
 
 These stacks from the source have no skill. Run them as `dgonzo:lens` with all three modes named.
 
